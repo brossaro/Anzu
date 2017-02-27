@@ -1,3 +1,6 @@
 name: Basic 7ième mer
 markdown: kramdown
 permalink: /:year/:month/:day/:title
+
+# set your locale
+lang: lv
