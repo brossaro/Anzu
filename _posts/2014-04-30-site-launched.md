@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "le_gaillard, Lancement du site!"
+title: "Lancement du site!"
 date: 2014-04-30
 ---
 

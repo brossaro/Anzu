@@ -4,7 +4,7 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>le_gaillard's Blog</title>
+ <title></title>
  <link href="http://brossaro.github.io/Anzu/atom.xml" rel="self"/>
  <link href="http://brossaro.github.io/Anzu"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
