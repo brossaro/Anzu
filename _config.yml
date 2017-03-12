@@ -1,7 +1,0 @@
-name: 7e mer basique
-markdown: kramdown
-permalink: /:year/:month/:day/:title
-encoding: utf-8
-
-
-languages: ["fr"]
