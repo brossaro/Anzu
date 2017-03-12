@@ -1,24 +1,7 @@
-name: Flex
-markdown: redcarpet
-highlighter: pygments
-exclude: ["LICENSE.txt", "README.md"]
-
-baseurl: ""
-permalink: /:title/
+name: 7e mer basique
+markdown: kramdown
+permalink: /:year/:month/:day/:title
+encoding: utf-8
 
 
-# Paginate
-paginate: 1
-paginate_path: "/pagination/page:num/"
-
-
-# Plugins
-gems: 
-  - jekyll-multiple-languages-plugin
-  - jekyll-paginate
-
-
-# jekyll-multiple-languages-plugin settings:
-languages: ["it", "en", "es"]
-
-exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
+languages: ["fr"]
