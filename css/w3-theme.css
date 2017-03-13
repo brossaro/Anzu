@@ -1,0 +1,47 @@
+.w3-theme-l5 {color:#000 !important; background-color:#faedee !important}
+.w3-theme-l4 {color:#000 !important; background-color:#eec4c5 !important}
+.w3-theme-l3 {color:#fff !important; background-color:#de898b !important}
+.w3-theme-l2 {color:#fff !important; background-color:#cd4e50 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#a22e30 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#5d1a1b !important}
+.w3-theme-d2 {color:#fff !important; background-color:#531718 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#481415 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#3e1212 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#340f0f !important}
+
+.w3-theme-light {color:#000 !important; background-color:#faedee !important}
+.w3-theme-dark {color:#fff !important; background-color:#340f0f !important}
+.w3-theme-action {color:#fff !important; background-color:#340f0f !important}
+
+.w3-theme {color:#fff !important; background-color:#671d1e !important}
+.w3-text-theme {color:#671d1e !important}
+.w3-border-theme {border-color:#671d1e !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#671d1e !important}
+.w3-hover-text-theme {color:#671d1e !important}
+.w3-hover-border-theme:hover {border-color:#671d1e !important}
+
+
+
+.w3-secondary-theme-l5 {color:#000 !important; background-color:#fbfcfc !important}
+.w3-secondary-theme-l4 {color:#000 !important; background-color:#f2f5f5 !important}
+.w3-secondary-theme-l3 {color:#000 !important; background-color:#e5eaea !important}
+.w3-secondary-theme-l2 {color:#000 !important; background-color:#d8e0e0 !important}
+.w3-secondary-theme-l1 {color:#000 !important; background-color:#cad6d6 !important}
+.w3-secondary-theme-d1 {color:#000 !important; background-color:#a7baba !important}
+.w3-secondary-theme-d2 {color:#fff !important; background-color:#91a9a9 !important}
+.w3-secondary-theme-d3 {color:#fff !important; background-color:#7b9898 !important}
+.w3-secondary-theme-d4 {color:#fff !important; background-color:#688484 !important}
+.w3-secondary-theme-d5 {color:#fff !important; background-color:#566e6e !important}
+
+.w3-secondary-theme-light {color:#000 !important; background-color:#fbfcfc !important}
+.w3-secondary-theme-dark {color:#fff !important; background-color:#566e6e !important}
+.w3-secondary-theme-action {color:#fff !important; background-color:#566e6e !important}
+
+.w3-secondary-theme {color:#000 !important; background-color:#becccc !important}
+.w3-text-secondary-theme {color:#becccc !important}
+.w3-border-secondary-theme {border-color:#becccc !important}
+
+.w3-hover-secondary-theme:hover {color:#000 !important; background-color:#becccc !important}
+.w3-hover-text-secondary-theme {color:#becccc !important}
+.w3-hover-border-secondary-theme:hover {border-color:#becccc !important}
