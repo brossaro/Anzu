@@ -1,0 +1,12 @@
+Validation 1 à 7
+
+Étape 2
+-Améliorer style
+-Meilleur feedback sur nation sélectionnée
+
+Étape 3
+-TODO
+
+Étape 4
+-Disable sur -/+ quand impossible
+-Empecher enlever competence provenant de l'étape 3

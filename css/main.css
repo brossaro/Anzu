@@ -1,1 +1,157 @@
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Regular-TTF.ttf);
+}
 
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Bold-TTF.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Italic-TTF.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-BoldItalic-TTF.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Cabin;
+}
+
+footer {
+    position:absolute;  
+    left:0; 
+    right:0;
+    margin-top:20px;
+}
+
+.breadcrumb { 
+    list-style: none; 
+    overflow: hidden; 
+    font: 12px Sans-Serif;
+    padding-left:0px;
+  }
+  .breadcrumb li { 
+    float: left; 
+  }
+  .breadcrumb li a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 0 10px 45px;
+    background: #671d1e; 
+    position: relative; 
+    display: block;
+    float: left;
+  }
+  .breadcrumb li a::after { 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #671d1e;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    left: 100%;
+    z-index: 2; 
+  }
+
+  .breadcrumb li a.inactive {
+    background: #de898b; 
+    cursor:default; 
+  }
+  .breadcrumb li a.inactive::after {   
+    border-left: 30px solid #de898b;  
+    cursor:default;   
+  }
+  .breadcrumb li a.selected {
+    background: #becccc; 
+    cursor:default;   
+  }
+  .breadcrumb li a.selected::after {   
+    border-left: 30px solid #becccc;
+    cursor:default;     
+  }
+  
+  
+  .breadcrumb li a::before { 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;       
+    border-bottom: 50px solid transparent;
+    border-left:30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1; 
+  }
+  
+  .breadcrumb li:first-child a {
+    padding-left: 20px;
+  }
+  
+  .breadcrumb li a:hover { 
+    background: #becccc; 
+    color:black;
+  }
+  .breadcrumb li a:hover:after { 
+    border-left-color:#becccc !important; 
+  }
+
+  .breadcrumb li a.inactive:hover { 
+    background: #de898b; 
+    color:white;
+  }
+  .breadcrumb li a.inactive:hover:after { 
+    border-left-color:#de898b !important; 
+  }
+  
+  .star-rating {
+      color: #f0f5f5;
+  }
+  
+  .checked {
+      color: #671d1e;
+  }
+
+  .nation-card {
+    width:200px;
+  }
+
+  .nation-card h4 {
+    position:relative;
+    height: 60px;
+  }
+
+  .nation-card h4 span {
+    position:absolute;
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .nation-card table{
+    width:150px;
+  }
+
+  .nation-card .w3-card-4 > p{
+    margin-top:0;
+  }

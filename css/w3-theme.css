@@ -40,8 +40,12 @@
 
 .w3-secondary-theme {color:#000 !important; background-color:#becccc !important}
 .w3-text-secondary-theme {color:#becccc !important}
+.w3-text-secondary-theme-dark {color:#566e6e !important}
 .w3-border-secondary-theme {border-color:#becccc !important}
 
 .w3-hover-secondary-theme:hover {color:#000 !important; background-color:#becccc !important}
 .w3-hover-text-secondary-theme {color:#becccc !important}
 .w3-hover-border-secondary-theme:hover {border-color:#becccc !important}
+
+.w3-theme .w3-dropdown-content a:hover {color:#000 !important; background-color:#becccc !important}
+
