@@ -65,6 +65,7 @@ var nation = null;
 var nationCarac = null;
 
 var competencePts = 10;
+var avantagePts = 10;
 
 function goToNextStep() {    
     var step = activeStep;
@@ -194,6 +195,6 @@ $(document).ready(function() {
         $('.js-competence .js-btn-plus').click(function(event) { competencePlus(event); });
 
 
-     }, 200);    
+     }, 500);    
 });
 
