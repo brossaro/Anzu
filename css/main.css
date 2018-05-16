@@ -130,6 +130,10 @@ footer {
       color: #671d1e;
   }
 
+  .inactive-checked {
+    color: #de898b;
+}
+
   .nation-card {
     width:200px;
   }

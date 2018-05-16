@@ -2,18 +2,21 @@ Général
 -Validation 1 à 7
 -page d'accueil
 -augmenter le timeout lors du load et ajouter un icon Loading
-- example https://7thsea.neocities.org/
+-Lorsqu'on reviens à une étape antérieur on peut tricher (ex. changer d'historique pour avoir plus de 3 dans une compétence)
+-example https://7thsea.neocities.org/
 
 Étape 2
 -Améliorer style
 -Meilleur feedback sur nation sélectionnée
 
 Étape 3
--TODO après 4 et 5
+-Bug: case reste disabled quand on décoche une checbox
+-Ajouter AvantagesPts quand deux fois le même avantage
 
 Étape 4
 -Disable sur -/+ quand impossible
--Empecher enlever competence provenant de l'étape 3
--Afficher nombre de point
+-Afficher nombre de points
 
 Étape 5
+-Afficher nombre de points
+-Les sections devraient être collapsables

@@ -1,76 +1,74 @@
 var caracteristiqueBase = [
-    { nom: "Force", valeur: 2 },
-    { nom: "Finesse", valeur: 2 },
-    { nom: "Resolution", valeur: 2 },
-    { nom: "Astuce", valeur: 2 },
-    { nom: "Panache", valeur: 2 }
+    { name: "Force", valeur: 2 },
+    { name: "Finesse", valeur: 2 },
+    { name: "Resolution", valeur: 2 },
+    { name: "Astuce", valeur: 2 },
+    { name: "Panache", valeur: 2 }
 ];
-
 var Nation = [
-    { id: "ava", nom: "Avalon", carac1: "Panache", carac2: "Resolution" },
-    { id: "ini", nom: "Inismore", carac1: "Panache", carac2: "Astuce" },
-    { id: "hig", nom: "Marches des Highlands", carac1: "Force", carac2: " Finesse" },
-    { id: "cas", nom: "Castille", carac1: "Finesse", carac2: "Astuce" },
-    { id: "eis", nom: "Eisen", carac1: "Force", carac2: " Résolution" },
-    { id: "mon", nom: "Montaigne", carac1: "Finesse", carac2: "Panache" },
-    { id: "sar", nom: "Sarmatie", carac1: "Force", carac2: "Panache" },
-    { id: "uss", nom: "Ussura", carac1: "Resolution", carac2: "Astuce" },
-    { id: "ves", nom: "Vesten", carac1: "Force", carac2: "Astuce" },
-    { id: "vod", nom: "Vodacce", carac1: "Finesse", carac2: "Resolution" }
+    { id: "ava", name: "Avalon", carac1: "Panache", carac2: "Resolution" },
+    { id: "ini", name: "Inismore", carac1: "Panache", carac2: "Astuce" },
+    { id: "hig", name: "Marches des Highlands", carac1: "Force", carac2: " Finesse" },
+    { id: "cas", name: "Castille", carac1: "Finesse", carac2: "Astuce" },
+    { id: "eis", name: "Eisen", carac1: "Force", carac2: " Résolution" },
+    { id: "mon", name: "Montaigne", carac1: "Finesse", carac2: "Panache" },
+    { id: "sar", name: "Sarmatie", carac1: "Force", carac2: "Panache" },
+    { id: "uss", name: "Ussura", carac1: "Resolution", carac2: "Astuce" },
+    { id: "ves", name: "Vesten", carac1: "Force", carac2: "Astuce" },
+    { id: "vod", name: "Vodacce", carac1: "Finesse", carac2: "Resolution" }
 ];
 var Historique = [
-    { id: 'hi1', name: 'Archéologue', av1: 'av47', av2: 'av25', av3: '', co1: 'Athlétisme', co2: 'Érudition', co3: 'Persuasion', co4: 'Vigilance', co5: 'Vol' },
-    { id: 'hi2', name: 'Aristocrate', av1: 'av51', av2: 'av34', av3: '', co1: 'Empathie', co2: 'Équitation', co3: 'Érudition', co4: 'Persuasion', co5: 'Tir' },
-    { id: 'hi3', name: 'Artisan', av1: 'av13', av2: 'av44', av3: '', co1: 'Athlétisme', co2: 'Érudition', co3: 'Persuasion', co4: 'Représentation', co5: 'Vigilance' },
-    { id: 'hi4', name: 'Artiste', av1: 'av20', av2: 'av45', av3: '', co1: 'Empathie', co2: 'Équitation', co3: 'Persuasion', co4: 'Représentation', co5: 'Subornation' },
-    { id: 'hi5', name: 'Artiste De Scène', av1: 'av26', av2: 'av56', av3: '', co1: 'Athlétisme', co2: 'Empathie', co3: 'Représentation', co4: 'Subornation', co5: 'Vol' },
-    { id: 'hi6', name: 'Assassin', av1: 'av43', av2: 'av28', av3: '', co1: 'ArmesBlanches', co2: 'Athlétisme', co3: 'Dissimulation', co4: 'Empathie', co5: 'Intimidation' },
+    { id: 'hi1', name: 'Archeologue', av1: 'av47', av2: 'av25', av3: '', co1: 'Athletisme', co2: 'Erudition', co3: 'Persuasion', co4: 'Vigilance', co5: 'Vol' },
+    { id: 'hi2', name: 'Aristocrate', av1: 'av51', av2: 'av34', av3: '', co1: 'Empathie', co2: 'Equitation', co3: 'Erudition', co4: 'Persuasion', co5: 'Tir' },
+    { id: 'hi3', name: 'Artisan', av1: 'av13', av2: 'av44', av3: '', co1: 'Athletisme', co2: 'Erudition', co3: 'Persuasion', co4: 'Representation', co5: 'Vigilance' },
+    { id: 'hi4', name: 'Artiste', av1: 'av20', av2: 'av45', av3: '', co1: 'Empathie', co2: 'Equitation', co3: 'Persuasion', co4: 'Representation', co5: 'Subornation' },
+    { id: 'hi5', name: 'Artiste De Scène', av1: 'av26', av2: 'av56', av3: '', co1: 'Athletisme', co2: 'Empathie', co3: 'Representation', co4: 'Subornation', co5: 'Vol' },
+    { id: 'hi6', name: 'Assassin', av1: 'av43', av2: 'av28', av3: '', co1: 'ArmesBlanches', co2: 'Athletisme', co3: 'Dissimulation', co4: 'Empathie', co5: 'Intimidation' },
     { id: 'hi7', name: 'Capitaine De Vaisseau', av1: 'av23', av2: 'av24', av3: 'av9', co1: 'ArtMilitaire', co2: 'Navigation', co3: 'Persuasion', co4: 'Tir', co5: 'Vigilance' },
-    { id: 'hi8', name: 'Cavalier', av1: 'av52', av2: 'av36', av3: '', co1: 'ArmesBlanches', co2: 'ArtMilitaire', co3: 'Équitation', co4: 'Intimidation', co5: 'Vigilance' },
-    { id: 'hi9', name: 'Chasseur', av1: 'av16', av2: 'av53', av3: '', co1: 'Dissimulation', co2: 'Équitation', co3: 'Intimidation', co4: 'Tir', co5: 'Vigilance' },
+    { id: 'hi8', name: 'Cavalier', av1: 'av52', av2: 'av36', av3: '', co1: 'ArmesBlanches', co2: 'ArtMilitaire', co3: 'Equitation', co4: 'Intimidation', co5: 'Vigilance' },
+    { id: 'hi9', name: 'Chasseur', av1: 'av16', av2: 'av53', av3: '', co1: 'Dissimulation', co2: 'Equitation', co3: 'Intimidation', co4: 'Tir', co5: 'Vigilance' },
     { id: 'hi10', name: 'Commandant De Bord', av1: 'av13', av2: 'av16', av3: 'av9', co1: 'ArtMilitaire', co2: 'Bagarre', co3: 'Dissimulation', co4: 'Navigation', co5: 'Tir' },
-    { id: 'hi11', name: 'Courtisan', av1: 'av40', av2: 'av15', av3: '', co1: 'ArmesBlanches', co2: 'Empathie', co3: 'Équitation', co4: 'Représentation', co5: 'Subornation' },
-    { id: 'hi12', name: 'Criminel', av1: 'av11', av2: 'av39', av3: '', co1: 'Athlétisme', co2: 'Dissimulation', co3: 'Empathie', co4: 'Intimidation', co5: 'Vol' },
-    { id: 'hi13', name: 'Domestique', av1: 'av17', av2: 'av55', av3: '', co1: 'Dissimulation', co2: 'Équitation', co3: 'Subornation', co4: 'Vigilance', co5: 'Vol' },
-    { id: 'hi14', name: 'Duelliste', av1: 'av68', av2: '', av3: '', co1: 'ArmesBlanches', co2: 'Athlétisme', co3: 'Empathie', co4: 'Intimidation', co5: 'Représentation' },
-    { id: 'hi15', name: 'Érudit', av1: 'av6', av2: 'av65', av3: '', co1: 'Empathie', co2: 'Érudition', co3: 'Persuasion', co4: 'Représentation', co5: 'Vigilance' },
+    { id: 'hi11', name: 'Courtisan', av1: 'av40', av2: 'av15', av3: '', co1: 'ArmesBlanches', co2: 'Empathie', co3: 'Equitation', co4: 'Representation', co5: 'Subornation' },
+    { id: 'hi12', name: 'Criminel', av1: 'av11', av2: 'av39', av3: '', co1: 'Athletisme', co2: 'Dissimulation', co3: 'Empathie', co4: 'Intimidation', co5: 'Vol' },
+    { id: 'hi13', name: 'Domestique', av1: 'av17', av2: 'av55', av3: '', co1: 'Dissimulation', co2: 'Equitation', co3: 'Subornation', co4: 'Vigilance', co5: 'Vol' },
+    { id: 'hi14', name: 'Duelliste', av1: 'av68', av2: '', av3: '', co1: 'ArmesBlanches', co2: 'Athletisme', co3: 'Empathie', co4: 'Intimidation', co5: 'Representation' },
+    { id: 'hi15', name: 'Erudit', av1: 'av6', av2: 'av65', av3: '', co1: 'Empathie', co2: 'Erudition', co3: 'Persuasion', co4: 'Representation', co5: 'Vigilance' },
     { id: 'hi16', name: 'Espion', av1: 'av22', av2: 'av48', av3: '', co1: 'Dissimulation', co2: 'Empathie', co3: 'Subornation', co4: 'Vigilance', co5: 'Vol' },
-    { id: 'hi17', name: 'Explorateur', av1: 'av27', av2: 'av50', av3: '', co1: 'Athlétisme', co2: 'Empathie', co3: 'Équitation', co4: 'Navigation', co5: 'Persuasion' },
-    { id: 'hi18', name: 'Fermier', av1: 'av58', av2: 'av3', av3: '', co1: 'Athlétisme', co2: 'Empathie', co3: 'Équitation', co4: 'Persuasion', co5: 'Représentation' },
-    { id: 'hi19', name: 'Ingénieur', av1: 'av5', av2: 'av44', av3: 'av10', co1: 'ArtMilitaire', co2: 'Équitation', co3: 'Érudition', co4: 'Persuasion', co5: 'Tir' },
-    { id: 'hi20', name: 'Jenny', av1: 'av37', av2: 'av12', av3: '', co1: 'Athlétisme', co2: 'Empathie', co3: 'Représentation', co4: 'Subornation', co5: 'Tir' },
-    { id: 'hi21', name: 'Marchand', av1: 'av5', av2: 'av63', av3: '', co1: 'Empathie', co2: 'Équitation', co3: 'Intimidation', co4: 'Persuasion', co5: 'Subornation' },
+    { id: 'hi17', name: 'Explorateur', av1: 'av27', av2: 'av50', av3: '', co1: 'Athletisme', co2: 'Empathie', co3: 'Equitation', co4: 'Navigation', co5: 'Persuasion' },
+    { id: 'hi18', name: 'Fermier', av1: 'av58', av2: 'av3', av3: '', co1: 'Athletisme', co2: 'Empathie', co3: 'Equitation', co4: 'Persuasion', co5: 'Representation' },
+    { id: 'hi19', name: 'Ingenieur', av1: 'av5', av2: 'av44', av3: 'av10', co1: 'ArtMilitaire', co2: 'Equitation', co3: 'Erudition', co4: 'Persuasion', co5: 'Tir' },
+    { id: 'hi20', name: 'Jenny', av1: 'av37', av2: 'av12', av3: '', co1: 'Athletisme', co2: 'Empathie', co3: 'Representation', co4: 'Subornation', co5: 'Tir' },
+    { id: 'hi21', name: 'Marchand', av1: 'av5', av2: 'av63', av3: '', co1: 'Empathie', co2: 'Equitation', co3: 'Intimidation', co4: 'Persuasion', co5: 'Subornation' },
     { id: 'hi22', name: 'Marin', av1: 'av38', av2: 'av25', av3: '', co1: 'ArmesBlanches', co2: 'Bagarre', co3: 'Navigation', co4: 'Subornation', co5: 'Vigilance' },
-    { id: 'hi23', name: 'Médecin', av1: 'av62', av2: 'av5', av3: '', co1: 'Empathie', co2: 'Équitation', co3: 'Érudition', co4: 'Persuasion', co5: 'Vigilance' },
-    { id: 'hi24', name: 'Mercenaire', av1: 'av60', av2: 'av4', av3: '', co1: 'ArmesBlanches', co2: 'Athlétisme', co3: 'Bagarre', co4: 'Intimidation', co5: 'Vigilance' },
-    { id: 'hi25', name: 'Officier De L’Armée', av1: 'av57', av2: 'av10', av3: '', co1: 'ArtMilitaire', co2: 'Athlétisme', co3: 'Équitation', co4: 'Intimidation', co5: 'Tir' },
+    { id: 'hi23', name: 'Medecin', av1: 'av62', av2: 'av5', av3: '', co1: 'Empathie', co2: 'Equitation', co3: 'Erudition', co4: 'Persuasion', co5: 'Vigilance' },
+    { id: 'hi24', name: 'Mercenaire', av1: 'av60', av2: 'av4', av3: '', co1: 'ArmesBlanches', co2: 'Athletisme', co3: 'Bagarre', co4: 'Intimidation', co5: 'Vigilance' },
+    { id: 'hi25', name: 'Officier De L’Armee', av1: 'av57', av2: 'av10', av3: '', co1: 'ArtMilitaire', co2: 'Athletisme', co3: 'Equitation', co4: 'Intimidation', co5: 'Tir' },
     { id: 'hi26', name: 'Officier De La Marine', av1: 'av18', av2: 'av9', av3: 'av32', co1: 'ArmesBlanches', co2: 'ArtMilitaire', co3: 'Intimidation', co4: 'Navigation', co5: 'Vigilance' },
-    { id: 'hi27', name: 'Orphelin', av1: 'av46', av2: 'av35', av3: '', co1: 'Athlétisme', co2: 'Bagarre', co3: 'Dissimulation', co4: 'Empathie', co5: 'Intimidation' },
+    { id: 'hi27', name: 'Orphelin', av1: 'av46', av2: 'av35', av3: '', co1: 'Athletisme', co2: 'Bagarre', co3: 'Dissimulation', co4: 'Empathie', co5: 'Intimidation' },
     { id: 'hi28', name: 'Pirate', av1: 'av42', av2: 'av36', av3: '', co1: 'Intimidation', co2: 'Navigation', co3: 'Tir', co4: 'Vigilance', co5: 'Vol' },
-    { id: 'hi29', name: 'Prêtre', av1: 'av26', av2: 'av49', av3: '', co1: 'Empathie', co2: 'Équitation', co3: 'Érudition', co4: 'Représentation', co5: 'Subornation' },
-    { id: 'hi30', name: 'Professeur', av1: 'av17', av2: 'av54', av3: '', co1: 'Empathie', co2: 'Érudition', co3: 'Persuasion', co4: 'Représentation', co5: 'Subornation' },
-    { id: 'hi31', name: 'Pugiliste', av1: 'av41', av2: 'av29', av3: '', co1: 'Athlétisme', co2: 'Bagarre', co3: 'Empathie', co4: 'Persuasion', co5: 'Représentation' },
+    { id: 'hi29', name: 'Prêtre', av1: 'av26', av2: 'av49', av3: '', co1: 'Empathie', co2: 'Equitation', co3: 'Erudition', co4: 'Representation', co5: 'Subornation' },
+    { id: 'hi30', name: 'Professeur', av1: 'av17', av2: 'av54', av3: '', co1: 'Empathie', co2: 'Erudition', co3: 'Persuasion', co4: 'Representation', co5: 'Subornation' },
+    { id: 'hi31', name: 'Pugiliste', av1: 'av41', av2: 'av29', av3: '', co1: 'Athletisme', co2: 'Bagarre', co3: 'Empathie', co4: 'Persuasion', co5: 'Representation' },
     { id: 'hi32', name: 'Soldat', av1: 'av1', av2: 'av61', av3: '', co1: 'ArmesBlanches', co2: 'ArtMilitaire', co3: 'Intimidation', co4: 'Tir', co5: 'Vigilance' }
 ];
 var Competence = [
-    { nom: "Armes Blanches", id: "ArmesBlanches" },
-    { nom: "Art Militaire", id: "ArtMilitaire" },
-    { nom: "Athletisme", id: "Athletisme" },
-    { nom: "Bagarre", id: "Bagarre" },
-    { nom: "Dissimulation", id: "Dissimulation" },
-    { nom: "Empathie", id: "Empathie" },
-    { nom: "Equitation", id: "Equitation" },
-    { nom: "Erudition", id: "Erudition" },
-    { nom: "Intimidation", id: "Intimidation" },
-    { nom: "Navigation", id: "Navigation" },
-    { nom: "Persuasion", id: "Persuasion" },
-    { nom: "Representation", id: "Representation" },
-    { nom: "Subornation", id: "Subornation" },
-    { nom: "Tir", id: "Tir" },
-    { nom: "Vigilance", id: "Vigilance" },
-    { nom: "Vol", id: "Vol" }
+    { name: "Armes blanches", id: "ArmesBlanches" },
+    { name: "Art militaire", id: "ArtMilitaire" },
+    { name: "Athlétisme", id: "Athletisme" },
+    { name: "Bagarre", id: "Bagarre" },
+    { name: "Dissimulation", id: "Dissimulation" },
+    { name: "Empathie", id: "Empathie" },
+    { name: "Équitation", id: "Equitation" },
+    { name: "Érudition", id: "Erudition" },
+    { name: "Intimidation", id: "Intimidation" },
+    { name: "Navigation", id: "Navigation" },
+    { name: "Persuasion", id: "Persuasion" },
+    { name: "Représentation", id: "Representation" },
+    { name: "Subornation", id: "Subornation" },
+    { name: "Tir", id: "Tir" },
+    { name: "Vigilance", id: "Vigilance" },
+    { name: "Vol", id: "Vol" }
 ];
-
 var Avantage = [
     { id: 'av1', name: 'bon buveur', cost: 1 },
     { id: 'av2', name: 'culture étrangère', cost: 1 },
@@ -153,52 +151,50 @@ var Arcane = [];
 var Histoire = [];
 var toucheFinale = {};
 
-
-
 var hero = {
+    competencePts: 10,
+    avantagePts: 5,
+    carac1: null,
+    carac2: null,
+    nation: null,
+    nationCarac: null,
+    hist1: null,
+    hist2: null,
+    hist1Avantages: [],
+    hist1Competences: [],
+    hist2Avantages: [],
+    hist2Competences: [],
+    histAvantagePts : 0,
+    avantages: [],
     caracteristique: [
-        { nom: "Force", valeur: 0 },
-        { nom: "Finesse", valeur: 0 },
-        { nom: "Resolution", valeur: 0 },
-        { nom: "Astuce", valeur: 0 },
-        { nom: "Panache", valeur: 0 }
+        { name: "Force", valeur: 0 },
+        { name: "Finesse", valeur: 0 },
+        { name: "Resolution", valeur: 0 },
+        { name: "Astuce", valeur: 0 },
+        { name: "Panache", valeur: 0 }
     ],
     competence: [
-        { nom: "ArmesBlanches", valeur: 0 },
-        { nom: "ArtMilitaire", valeur: 0 },
-        { nom: "Athletisme", valeur: 0 },
-        { nom: "Bagarre", valeur: 0 },
-        { nom: "Dissimulation", valeur: 0 },
-        { nom: "Empathie", valeur: 0 },
-        { nom: "Equitation", valeur: 0 },
-        { nom: "Erudition", valeur: 0 },
-        { nom: "Intimidation", valeur: 0 },
-        { nom: "Navigation", valeur: 0 },
-        { nom: "Persuasion", valeur: 0 },
-        { nom: "Representation", valeur: 0 },
-        { nom: "Subornation", valeur: 0 },
-        { nom: "Tir", valeur: 0 },
-        { nom: "Vigilance", valeur: 0 },
-        { nom: "Vol", valeur: 0 }
+        { name: "ArmesBlanches", valeur: 0, total: 0 },
+        { name: "ArtMilitaire", valeur: 0, total: 0 },
+        { name: "Athletisme", valeur: 0, total: 0 },
+        { name: "Bagarre", valeur: 0, total: 0 },
+        { name: "Dissimulation", valeur: 0, total: 0 },
+        { name: "Empathie", valeur: 0, total: 0 },
+        { name: "Equitation", valeur: 0, total: 0 },
+        { name: "Erudition", valeur: 0, total: 0 },
+        { name: "Intimidation", valeur: 0, total: 0 },
+        { name: "Navigation", valeur: 0, total: 0 },
+        { name: "Persuasion", valeur: 0, total: 0 },
+        { name: "Representation", valeur: 0, total: 0 },
+        { name: "Subornation", valeur: 0, total: 0 },
+        { name: "Tir", valeur: 0, total: 0 },
+        { name: "Vigilance", valeur: 0, total: 0 },
+        { name: "Vol", valeur: 0, total: 0 }
     ]
 };
 
 var currentStep = 1;
 var activeStep = 1;
-
-var carac1 = null;
-var carac2 = null;
-
-var nation = null;
-var nationCarac = null;
-
-var hist1 = null;
-var hist2 = null;
-
-var competencePts = 10;
-var avantagePts = 5;
-
-var avantages = [];
 
 function goToNextStep() {
     var step = activeStep;
@@ -236,7 +232,7 @@ function goToStep(stepToGo) {
 function validateData(step, isValid) {
     $(".js-validate-step").hide();
     if (step == 1) {
-        if (carac1 == null || carac2 == null) {
+        if (hero.carac1 == null || hero.carac2 == null) {
             $(".js-validate-step").show();
             return isValid = false;
         }
@@ -246,46 +242,62 @@ function validateData(step, isValid) {
 
 function calculateCaracRows() {
     $(".js-caracteristique .star-rating span").removeClass('checked');
+    $(".js-caracteristique .star-rating span").removeClass('inactive-checked');
     for (var i = 0; i < hero.caracteristique.length; i++) {
         hero.caracteristique[i].valeur = caracteristiqueBase[i].valeur;
-
-        if (hero.caracteristique[i].nom == carac1) hero.caracteristique[i].valeur++;
-
-        if (hero.caracteristique[i].nom == carac2) hero.caracteristique[i].valeur++;
-
-        if (hero.caracteristique[i].nom == nationCarac) hero.caracteristique[i].valeur++;
-
-        generateStar($('#js-' + hero.caracteristique[i].nom + '-row'), hero.caracteristique[i].valeur);
+        if (hero.caracteristique[i].name == hero.carac1) hero.caracteristique[i].valeur++;
+        if (hero.caracteristique[i].name == hero.carac2) hero.caracteristique[i].valeur++;
+        generateStar($('#js-' + hero.caracteristique[i].name + '-row'), hero.caracteristique[i].valeur);
+    }
+    for (var i = 0; i < hero.caracteristique.length; i++) {
+        if (hero.caracteristique[i].name == hero.nationCarac) {
+            hero.caracteristique[i].valeur++;
+            generateInactiveStar($('#js-' + hero.caracteristique[i].name + '-row'), 1);
+        }
     }
 }
 
 function calculateCompRows() {
     $(".js-competence .star-rating span").removeClass('checked');
+    $(".js-competence .star-rating span").removeClass('inactive-checked');
+    for (var i = 0; i < hero.hist1Competences.length; i++) {
+        generateInactiveStar($('#js-' + hero.hist1Competences[i] + '-row'), 1);
+    }
+    for (var i = 0; i < hero.hist2Competences.length; i++) { 
+        generateInactiveStar($('#js-' + hero.hist2Competences[i] + '-row'), 1);
+    }
     for (var i = 0; i < hero.competence.length; i++) {
-        generateStar($('#js-' + hero.competence[i].nom + '-row'), hero.competence[i].valeur);
+        generateStar($('#js-' + hero.competence[i].name + '-row'), hero.competence[i].valeur);
     }
 }
 
 function generateStar($row, carac) {
-
-    var nextStar = $row.find(".star-rating span").first();
+    var nextStar = $row.find(".star-rating").find('span').not('.checked, .inactive-checked').first();
     for (var i = 0; i < carac; i++) {
         nextStar.addClass('checked');
+        nextStar = $row.find(".star-rating").find('span').not('.checked, .inactive-checked').first();
+    }
+}
+
+function generateInactiveStar($row, carac) {
+    var nextStar = $row.find(".star-rating").find('span').not('.checked, .inactive-checked').first();
+    for (var i = 0; i < carac; i++) {
+        nextStar.addClass('inactive-checked');
         nextStar = $row.find(".star-rating").find('span').not('.checked').first();
     }
 }
 
 function caracRadioChange(event) {
-    carac1 = $('input[name="carac1"]:checked').val();
-    carac2 = $('input[name="carac2"]:checked').val();
+    hero.carac1 = $('input[name="carac1"]:checked').val();
+    hero.carac2 = $('input[name="carac2"]:checked').val();
     calculateCaracRows();
 }
 
 function nationRadioChange(event) {
     var value = $('input[name="nationCarac"]:checked').val().split('-');
-    nation = value[0];
+    hero.nation = value[0];
     propagateNationChange();
-    nationCarac = value[1];
+    hero.nationCarac = value[1];
     calculateCaracRows();
 }
 
@@ -293,37 +305,88 @@ function historyToggle(event) {
     var $target = $(event.target);
     var id = $target.attr('name');
     var isChecked = $target.is(':checked');
-
     if (isChecked) {
         if ($target.hasClass('hi-col-1')) {
-            hist1 = id;
+            hero.hist1 = id;
+            var result = $.grep(Historique, function (e) { return e.id == id; })[0];
+            hero.hist1Avantages.push(result.av1);
+            if (result.av2 != '') hero.hist1Avantages.push(result.av2);
+            if (result.av3 != '') hero.hist1Avantages.push(result.av3);
+            hero.hist1Competences.push(result.co1);          
+            hero.hist1Competences.push(result.co2);
+            hero.hist1Competences.push(result.co3);
+            hero.hist1Competences.push(result.co4);
+            hero.hist1Competences.push(result.co5);
             $('.hi-col-1').attr("disabled", true);
+            for (var i = 0; i < hero.hist1Competences.length; i++) {
+                hero.competence.find(x => x.name === hero.hist1Competences[i]).total++;
+            }
+            for (var i = 0; i < hero.hist1Avantages.length; i++) {
+                $('#avantages input[name=' + hero.hist1Avantages[i] + ']').attr("disabled", true);
+                $('#avantages input[name=' + hero.hist1Avantages[i] + ']').prop('checked', true);
+            }            
         }
         if ($target.hasClass('hi-col-2')) {
-            hist2 = id;
+            hero.hist2 = id;
+            var result = $.grep(Historique, function (e) { return e.id == id; })[0];
+            hero.hist2Avantages.push(result.av1);
+            if (result.av2 != '') hero.hist2Avantages.push(result.av2);
+            if (result.av3 != '') hero.hist2Avantages.push(result.av3);
+            hero.hist2Competences.push(result.co1);
+            hero.hist2Competences.push(result.co2);
+            hero.hist2Competences.push(result.co3);
+            hero.hist2Competences.push(result.co4);
+            hero.hist2Competences.push(result.co5);
             $('.hi-col-2').attr("disabled", true);
+            for (var i = 0; i < hero.hist2Competences.length; i++) {
+                hero.competence.find(x => x.name === hero.hist2Competences[i]).total++;
+            }
+            for (var i = 0; i < hero.hist2Avantages.length; i++) {
+                $('#avantages input[name=' + hero.hist2Avantages[i] + ']').attr("disabled", true);
+                $('#avantages input[name=' + hero.hist2Avantages[i] + ']').prop('checked', true);
+            }  
         }
     }
     else {
         if ($target.hasClass('hi-col-1')) {
-            hist1 = null;
-            $('.hi-col-1').removeAttr("disabled");
+            hero.hist1 = null;
+            for (var i = 0; i < hero.hist1Competences.length; i++) {
+                hero.competence.find(x => x.name === hero.hist1Competences[i]).total--;
+            }
+            hero.hist1Avantages = [];
+            hero.hist1Competences = [];
+            $('.hi-col-1').removeAttr("disabled");            
         }
         if ($target.hasClass('hi-col-2')) {
-            hist2 = null;
-            $('.hi-col-2').removeAttr("disabled");
+            hero.hist2 = null;
+            for (var i = 0; i < hero.hist2Competences.length; i++) {
+                hero.competence.find(x => x.name === hero.hist2Competences[i]).total--;
+            }
+            hero.hist2Avantages = [];
+            hero.hist2Competences = [];
+            $('.hi-col-2').removeAttr("disabled");            
         }
     }
-    if (hist1 != null)
-        $('input[name=' + hist1 + ']').removeAttr("disabled");
-    if (hist2 != null)
-        $('input[name=' + hist2 + ']').removeAttr("disabled");
+    if (hero.hist1 != null) $('input[name=' + hero.hist1 + ']').attr("disabled", true);
+    if (hero.hist2 != null) $('input[name=' + hero.hist2 + ']').attr("disabled", true);
+    $.each($('#historiques input:checked'), function (i, obj) {
+        $(this).removeAttr("disabled");
+    });
+    hero.histAvantagePts = 0;
+    for (var i = 0; i < hero.hist1Avantages.length; i++) {
+        for (var j = 0; j < hero.hist2Avantages.length; j++) {
+            if (hero.hist1Avantages[i] == hero.hist2Avantages[j]){
+                hero.histAvantagePts += Avantage.find(x => x.name === hero.hist1Avantages[i]).cost;
+            }
+        }
+    };
+    calculateCompRows();
     
 }
 
 function propagateNationChange() {
     resetNationChange();
-    switch (nation) {
+    switch (hero.nation) {
         case "ava":
             modifyAdvantageCost("av32", 1);
             modifyAdvantageCost("av69", 3);
@@ -398,10 +461,11 @@ function competenceMinus(event) {
     var $target = $(event.target);
     var comp = $target.closest('tr').attr("id").split('-')[1];
     for (var i = 0; i < hero.competence.length; i++) {
-        if (hero.competence[i].nom == comp
+        if (hero.competence[i].name == comp
             && hero.competence[i].valeur > 0) {
             hero.competence[i].valeur--;
-            competencePts++;
+            hero.competence[i].total--;
+            hero.competencePts++;
         }
     }
     calculateCompRows();
@@ -412,11 +476,12 @@ function competencePlus(event) {
 
     var comp = $target.closest('tr').attr("id").split('-')[1];
     for (var i = 0; i < hero.competence.length; i++) {
-        if (hero.competence[i].nom == comp
-            && hero.competence[i].valeur < 3
-            && competencePts > 0) {
+        if (hero.competence[i].name == comp
+            && hero.competence[i].total < 3
+            && hero.competencePts > 0) {
             hero.competence[i].valeur++;
-            competencePts--;
+            hero.competence[i].total++;
+            hero.competencePts--;
         }
     }
     calculateCompRows();
@@ -428,29 +493,37 @@ function advantageToggle(event) {
     var isChecked = $target.is(':checked');
     var value = Avantage.find(x => x.id === id).cost;
     if (isChecked) {
-        avantagePts -= value;
-        avantages.push(id);
-        var result = $.grep(Avantage, function (e) { return e.cost > avantagePts });
+        hero.avantagePts -= value;
+        hero.avantages.push(id);
+        var result = $.grep(Avantage, function (e) { return e.cost > hero.avantagePts });
         $.each(result, function (i, obj) {
             var name = obj.id;
-            $('input[name=' + name + ']').attr("disabled", true);
+            $('#avantages input[name=' + name + ']').attr("disabled", true);
         });
     }
     else {
-        avantagePts += value;
-        var result = $.grep(Avantage, function (e) { return e.cost <= avantagePts; });
+        hero.avantagePts += value;
+        var result = $.grep(Avantage, function (e) { return e.cost <= hero.avantagePts; });
         $.each(result, function (i, obj) {
             var name = obj.id;
-            $('input[name=' + name + ']').removeAttr("disabled");
+            $('#avantages input[name=' + name + ']').removeAttr("disabled");
         });
-        var index = avantages.indexOf(id);
+        var index = hero.avantages.indexOf(id);
         if (index > -1) {
-            avantages.splice(index, 1);
+            hero.avantages.splice(index, 1);
         }
     }
-    $.each(avantages, function (i, obj) {
-        $('input[name=' + obj + ']').removeAttr("disabled");
+    $.each(hero.avantages, function (i, obj) {
+        $('#avantages input[name=' + obj + ']').removeAttr("disabled");
     });
+    for (var i = 0; i < hero.hist1Avantages.length; i++) {
+        $('#avantages input[name=' + hero.hist1Avantages[i] + ']').attr("disabled", true);
+        $('#avantages input[name=' + hero.hist1Avantages[i] + ']').prop('checked', true);
+    }  
+    for (var i = 0; i < hero.hist2Avantages.length; i++) {
+        $('#avantages input[name=' + hero.hist2Avantages[i] + ']').attr("disabled", true);
+        $('#avantages input[name=' + hero.hist2Avantages[i] + ']').prop('checked', true);
+    }  
 }
 
 $(document).ready(function () {
@@ -465,6 +538,6 @@ $(document).ready(function () {
         $('.js-competence .js-btn-plus').click(function (event) { competencePlus(event); });
         $('#avantages input').click(function (event) { advantageToggle(event); })
 
-    }, 500);
+    }, 1000);
 });
 
