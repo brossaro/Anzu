@@ -2,11 +2,283 @@
     <div class="w3-responsive">
         <h2>6. Arcanes</h2>
         <div>
-                <p class="w3-left w3-italic">Tous les Héros ont un destin, le vôtre ne fait pas exception.
-                        Choisissez une Vertu et un Travers : les deux faces
-                        de votre carte dans le jeu de Sorte.
-                </p>
-            </div>
+            <p class="w3-left w3-italic">Tous les Héros ont un destin, le vôtre ne fait pas exception. Choisissez une Vertu et un Travers : les deux faces
+                de votre carte dans le jeu de Sorte.
+            </p>
+        </div>
+        <div id="arcanes">
+            <table class="w3-table w3-striped">
+                <thead>
+                    <tr class="w3-theme">
+                        <th>CARTE</th>
+                        <th>VERTUE</th>
+                        <th>TRAVERS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Le Mat</td>
+                        <td>
+                            <label>Roublard
+                                <input type="radio" name="vertu" value="roublard" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Curieux
+                                <input type="radio" name="travers" value="curieux" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Route</td>
+                        <td>
+                            <label>Amical
+                                <input type="radio" name="vertu" value="amical" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Dépendant
+                                <input type="radio" name="travers" value="dependant" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Magicien</td>
+                        <td>
+                            <label>Volontaire
+                                <input type="radio" name="vertu" value="volontaire" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Ambitieux
+                                <input type="radio" name="travers" value="ambitieux" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Les Amants</td>
+                        <td>
+                            <label>Passionné
+                                <input type="radio" name="vertu" value="passionne" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Amant maudit
+                                <input type="radio" name="travers" value="amantMaudit" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Roue de Fortune</td>
+                        <td>
+                            <label>Chanceux
+                                <input type="radio" name="vertu" value="chanceux" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Malchanceux
+                                <input type="radio" name="travers" value="malchanceux" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Diable</td>
+                        <td>
+                            <label>Habile
+                                <input type="radio" name="vertu" value="habile" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Naïf
+                                <input type="radio" name="travers" value="naif" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Tour</td>
+                        <td>
+                            <label>Humble
+                                <input type="radio" name="vertu" value="humble" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Arrogant
+                                <input type="radio" name="travers" value="arrogant" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Mandiant</td>
+                        <td>
+                            <label>Perspicace
+                                <input type="radio" name="vertu" value="perspicace" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Envieux
+                                <input type="radio" name="travers" value="envieux" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Sorcière</td>
+                        <td>
+                            <label>Intuitif
+                                <input type="radio" name="vertu" value="intuitif" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Manipulateur
+                                <input type="radio" name="travers" value="manipulateur" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Guerre</td>
+                        <td>
+                            <label>Conquérant
+                                <input type="radio" name="vertu" value="conquerant" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Loyal
+                                <input type="radio" name="travers" value="loyal" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Pendu</td>
+                        <td>
+                            <label>Altruiste
+                                <input type="radio" name="vertu" value="altruiste" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Indécis
+                                <input type="radio" name="travers" value="indecis" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Les Pièces du nocher</td>
+                        <td>
+                            <label>Prompt
+                                <input type="radio" name="vertu" value="prompt" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Perfectionniste
+                                <input type="radio" name="travers" value="perfectionniste" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Les Trônes</td>
+                        <td>
+                            <label>Apaisant
+                                <input type="radio" name="vertu" value="apaisant" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Têtu
+                                <input type="radio" name="travers" value="tetu" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Nuit sans lune</td>
+                        <td>
+                            <label>Subtil
+                                <input type="radio" name="vertu" value="subtil" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Obtus
+                                <input type="radio" name="travers" value="obtus" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Soleil</td>
+                        <td>
+                            <label>Glorieux
+                                <input type="radio" name="vertu" value="glorieux" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Fier
+                                <input type="radio" name="travers" value="fier" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Prophète</td>
+                        <td>
+                            <label>Lucide
+                                <input type="radio" name="vertu" value="lucide" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Excès de zèle
+                                <input type="radio" name="travers" value="zele" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La Réunion</td>
+                        <td>
+                            <label>Exemplaire
+                                <input type="radio" name="vertu" value="exemplaire" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Rancunier
+                                <input type="radio" name="travers" value="rancunier" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Héros</td>
+                        <td>
+                            <label>Hardi
+                                <input type="radio" name="vertu" value="hardi" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Téméraire
+                                <input type="radio" name="travers" value="temeraire" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le Glyphe</td>
+                        <td>
+                            <label>Impavide
+                                <input type="radio" name="vertu" value="impavide" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Superstitieux
+                                <input type="radio" name="travers" value="superstitieux" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>L’Empereur</td>
+                        <td>
+                            <label>Encourageant
+                                <input type="radio" name="vertu" value="encourageant" />
+                            </label>
+                        </td>
+                        <td>
+                            <label>Inconsidéré
+                                <input type="radio" name="travers" value="inconsidere" />
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <p>
             <button class="w3-button w3-hover-secondary-theme w3-theme w3-left js-btn-previous">Précédent</button>
             <button class="w3-button w3-hover-secondary-theme w3-theme w3-right js-btn-next">Suivant</button>

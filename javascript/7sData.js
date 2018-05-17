@@ -70,82 +70,82 @@ var Competence = [
     { name: "Vol", id: "Vol" }
 ];
 var Avantage = [
-    { id: 'av1', name: 'bon buveur', cost: 1 },
-    { id: 'av2', name: 'culture étrangère', cost: 1 },
-    { id: 'av3', name: 'débrouillard', cost: 1 },
-    { id: 'av4', name: 'estomac en fer forgé', cost: 1 },
-    { id: 'av5', name: 'horloge vivante', cost: 1 },
-    { id: 'av6', name: 'linguiste', cost: 1 },
-    { id: 'av7', name: 'massif', cost: 1 },
-    { id: 'av8', name: 'petit', cost: 1 },
-    { id: 'av9', name: 'pied marin', cost: 1 },
-    { id: 'av10', name: 'sens de l’orientation', cost: 1 },
-    { id: 'av11', name: 'accointances interlopes', cost: 2 },
-    { id: 'av12', name: 'attraction fatale', cost: 2 },
-    { id: 'av13', name: 'bricoleur', cost: 2 },
-    { id: 'av14', name: 'contacts', cost: 2 },
-    { id: 'av15', name: 'dans les petits papiers', cost: 2 },
-    { id: 'av16', name: 'doigts de fée', cost: 2 },
-    { id: 'av17', name: 'entraide', cost: 2 },
-    { id: 'av18', name: 'équilibre parfait', cost: 2 },
-    { id: 'av19', name: 'famille étendue', cost: 2 },
-    { id: 'av20', name: 'fascination', cost: 2 },
-    { id: 'av21', name: 'fibre héroïque', cost: 2 },
-    { id: 'av22', name: 'immunisé contre le poison', cost: 2 },
-    { id: 'av23', name: 'marié à l’océan', cost: 2 },
-    { id: 'av24', name: 'meneur d’hommes', cost: 2 },
-    { id: 'av25', name: 'oeil de lynx', cost: 2 },
-    { id: 'av26', name: 'on ne peut rien vous refuser', cost: 2 },
-    { id: 'av27', name: 'passe-partout', cost: 2 },
-    { id: 'av28', name: 'psst, par ici', cost: 2 },
-    { id: 'av29', name: 'regard menaçant', cost: 2 },
-    { id: 'av30', name: 'réputation', cost: 2 },
-    { id: 'av31', name: 'roi de l’évasion', cost: 2 },
-    { id: 'av32', name: 'sens des affaires', cost: 2 },
-    { id: 'av33', name: 'sorcellerie', cost: 2 },
-    { id: 'av34', name: 'sourire désarmant', cost: 2 },
-    { id: 'av35', name: 'un contre dix', cost: 2 },
-    { id: 'av36', name: 'volonté indomptable', cost: 2 },
-    { id: 'av37', name: 'approche flexible', cost: 3 },
-    { id: 'av38', name: 'bagarreur de bar', cost: 3 },
-    { id: 'av39', name: 'camaraderie', cost: 3 },
-    { id: 'av40', name: 'c’était un malentendu', cost: 3 },
-    { id: 'av41', name: 'cogneur', cost: 3 },
-    { id: 'av42', name: 'dans le mille', cost: 3 },
-    { id: 'av43', name: 'escrimeur', cost: 3 },
-    { id: 'av44', name: 'maître artisan', cost: 3 },
-    { id: 'av45', name: 'mécène', cost: 3 },
-    { id: 'av46', name: 'ni vu ni connu', cost: 3 },
-    { id: 'av47', name: 'objet fétiche', cost: 3 },
-    { id: 'av48', name: 'opportuniste', cost: 3 },
-    { id: 'av49', name: 'ordonné', cost: 3 },
-    { id: 'av50', name: 'réflexes éclair', cost: 3 },
-    { id: 'av51', name: 'riche', cost: 3 },
-    { id: 'av52', name: 'spécialiste des armes lourdes', cost: 3 },
-    { id: 'av53', name: 'tireur d’élite', cost: 3 },
-    { id: 'av54', name: 'titulaire', cost: 3 },
-    { id: 'av55', name: 'vie agitée', cost: 3 },
-    { id: 'av56', name: 'virtuose', cost: 3 },
-    { id: 'av57', name: 'académicien militaire', cost: 4 },
-    { id: 'av58', name: 'caractéristique légendaire', cost: 4 },
-    { id: 'av59', name: 'compagnon fidèle', cost: 4 },
-    { id: 'av60', name: 'dur à cuire', cost: 4 },
-    { id: 'av61', name: 'encaisseur', cost: 4 },
-    { id: 'av62', name: 'faiseur de miracles', cost: 4 },
-    { id: 'av63', name: 'lyceum', cost: 4 },
-    { id: 'av64', name: 'spécialiste', cost: 4 },
-    { id: 'av65', name: 'universitaire', cost: 4 },
-    { id: 'av66', name: 'seidr', cost: 4 },
-    { id: 'av67', name: 'alchimiste', cost: 4 },
-    { id: 'av68', name: 'académie de duellistes', cost: 5 },
-    { id: 'av69', name: 'chance de tous les diables', cost: 5 },
-    { id: 'av70', name: 'étincelle de génie', cost: 5 },
-    { id: 'av71', name: 'force incroyable', cost: 5 },
-    { id: 'av72', name: 'fureur vengeresse', cost: 5 },
-    { id: 'av73', name: 'joie de vivre', cost: 5 },
-    { id: 'av74', name: 'mon heure n’est pas venue', cost: 5 },
-    { id: 'av75', name: 'nous ne sommes pas si différents…', cost: 5 },
-    { id: 'av76', name: 'unis, nous sommes forts', cost: 5 }
+    { id: 'av1', name: 'bon buveur', cost: 1, realCost: 1 },
+    { id: 'av2', name: 'culture étrangère', cost: 1, realCost: 1 },
+    { id: 'av3', name: 'débrouillard', cost: 1, realCost: 1 },
+    { id: 'av4', name: 'estomac en fer forgé', cost: 1, realCost: 1 },
+    { id: 'av5', name: 'horloge vivante', cost: 1, realCost: 1 },
+    { id: 'av6', name: 'linguiste', cost: 1, realCost: 1 },
+    { id: 'av7', name: 'massif', cost: 1, realCost: 1 },
+    { id: 'av8', name: 'petit', cost: 1, realCost: 1 },
+    { id: 'av9', name: 'pied marin', cost: 1, realCost: 1 },
+    { id: 'av10', name: 'sens de l’orientation', cost: 1, realCost: 1 },
+    { id: 'av11', name: 'accointances interlopes', cost: 2, realCost: 2 },
+    { id: 'av12', name: 'attraction fatale', cost: 2, realCost: 2 },
+    { id: 'av13', name: 'bricoleur', cost: 2, realCost: 2 },
+    { id: 'av14', name: 'contacts', cost: 2, realCost: 2 },
+    { id: 'av15', name: 'dans les petits papiers', cost: 2, realCost: 2 },
+    { id: 'av16', name: 'doigts de fée', cost: 2, realCost: 2 },
+    { id: 'av17', name: 'entraide', cost: 2, realCost: 2 },
+    { id: 'av18', name: 'équilibre parfait', cost: 2, realCost: 2 },
+    { id: 'av19', name: 'famille étendue', cost: 2, realCost: 2 },
+    { id: 'av20', name: 'fascination', cost: 2, realCost: 2 },
+    { id: 'av21', name: 'fibre héroïque', cost: 2, realCost: 2 },
+    { id: 'av22', name: 'immunisé contre le poison', cost: 2, realCost: 2 },
+    { id: 'av23', name: 'marié à l’océan', cost: 2, realCost: 2 },
+    { id: 'av24', name: 'meneur d’hommes', cost: 2, realCost: 2 },
+    { id: 'av25', name: 'oeil de lynx', cost: 2, realCost: 2 },
+    { id: 'av26', name: 'on ne peut rien vous refuser', cost: 2, realCost: 2 },
+    { id: 'av27', name: 'passe-partout', cost: 2, realCost: 2 },
+    { id: 'av28', name: 'psst, par ici', cost: 2, realCost: 2 },
+    { id: 'av29', name: 'regard menaçant', cost: 2, realCost: 2 },
+    { id: 'av30', name: 'réputation', cost: 2, realCost: 2 },
+    { id: 'av31', name: 'roi de l’évasion', cost: 2, realCost: 2 },
+    { id: 'av32', name: 'sens des affaires', cost: 2, realCost: 2 },
+    { id: 'av33', name: 'sorcellerie', cost: 2, realCost: 2 },
+    { id: 'av34', name: 'sourire désarmant', cost: 2, realCost: 2 },
+    { id: 'av35', name: 'un contre dix', cost: 2, realCost: 2 },
+    { id: 'av36', name: 'volonté indomptable', cost: 2, realCost: 2 },
+    { id: 'av37', name: 'approche flexible', cost: 3, realCost: 3 },
+    { id: 'av38', name: 'bagarreur de bar', cost: 3, realCost: 3 },
+    { id: 'av39', name: 'camaraderie', cost: 3, realCost: 3 },
+    { id: 'av40', name: 'c’était un malentendu', cost: 3, realCost: 3 },
+    { id: 'av41', name: 'cogneur', cost: 3, realCost: 3 },
+    { id: 'av42', name: 'dans le mille', cost: 3, realCost: 3 },
+    { id: 'av43', name: 'escrimeur', cost: 3, realCost: 3 },
+    { id: 'av44', name: 'maître artisan', cost: 3, realCost: 3 },
+    { id: 'av45', name: 'mécène', cost: 3, realCost: 3 },
+    { id: 'av46', name: 'ni vu ni connu', cost: 3, realCost: 3 },
+    { id: 'av47', name: 'objet fétiche', cost: 3, realCost: 3 },
+    { id: 'av48', name: 'opportuniste', cost: 3, realCost: 3 },
+    { id: 'av49', name: 'ordonné', cost: 3, realCost: 3 },
+    { id: 'av50', name: 'réflexes éclair', cost: 3, realCost: 3 },
+    { id: 'av51', name: 'riche', cost: 3, realCost: 3 },
+    { id: 'av52', name: 'spécialiste des armes lourdes', cost: 3, realCost: 3 },
+    { id: 'av53', name: 'tireur d’élite', cost: 3, realCost: 3 },
+    { id: 'av54', name: 'titulaire', cost: 3, realCost: 3 },
+    { id: 'av55', name: 'vie agitée', cost: 3, realCost: 3 },
+    { id: 'av56', name: 'virtuose', cost: 3, realCost: 3 },
+    { id: 'av57', name: 'académicien militaire', cost: 4, realCost: 4 },
+    { id: 'av58', name: 'caractéristique légendaire', cost: 4, realCost: 4 },
+    { id: 'av59', name: 'compagnon fidèle', cost: 4, realCost: 4 },
+    { id: 'av60', name: 'dur à cuire', cost: 4, realCost: 4 },
+    { id: 'av61', name: 'encaisseur', cost: 4, realCost: 4 },
+    { id: 'av62', name: 'faiseur de miracles', cost: 4, realCost: 4 },
+    { id: 'av63', name: 'lyceum', cost: 4, realCost: 4 },
+    { id: 'av64', name: 'spécialiste', cost: 4, realCost: 4 },
+    { id: 'av65', name: 'universitaire', cost: 4, realCost: 4 },
+    { id: 'av66', name: 'seidr', cost: 4, realCost: 4 },
+    { id: 'av67', name: 'alchimiste', cost: 4, realCost: 4 },
+    { id: 'av68', name: 'académie de duellistes', cost: 5, realCost: 5 },
+    { id: 'av69', name: 'chance de tous les diables', cost: 5, realCost: 5 },
+    { id: 'av70', name: 'étincelle de génie', cost: 5, realCost: 5 },
+    { id: 'av71', name: 'force incroyable', cost: 5, realCost: 5 },
+    { id: 'av72', name: 'fureur vengeresse', cost: 5, realCost: 5 },
+    { id: 'av73', name: 'joie de vivre', cost: 5, realCost: 5 },
+    { id: 'av74', name: 'mon heure n’est pas venue', cost: 5, realCost: 5 },
+    { id: 'av75', name: 'nous ne sommes pas si différents…', cost: 5, realCost: 5 },
+    { id: 'av76', name: 'unis, nous sommes forts', cost: 5, realCost: 5 }
 ];
 var Arcane = [];
 var Histoire = [];
@@ -154,6 +154,7 @@ var toucheFinale = {};
 var hero = {
     competencePts: 10,
     avantagePts: 5,
+    avantagesUsedPts: 0,
     carac1: null,
     carac2: null,
     nation: null,
@@ -374,9 +375,9 @@ function historyToggle(event) {
     });
     hero.histAvantagePts = 0;
     for (var i = 0; i < hero.hist1Avantages.length; i++) {
-        for (var j = 0; j < hero.hist2Avantages.length; j++) {
+        for (var j = 0; j < hero.hist2Avantages.length; j++) {            
             if (hero.hist1Avantages[i] == hero.hist2Avantages[j]){
-                hero.histAvantagePts += Avantage.find(x => x.name === hero.hist1Avantages[i]).cost;
+                hero.histAvantagePts += Avantage.find(x => x.id === hero.hist1Avantages[i]).realCost;
             }
         }
     };
@@ -487,35 +488,24 @@ function competencePlus(event) {
     calculateCompRows();
 }
 
-function advantageToggle(event) {
-    var $target = $(event.target);
-    var id = $target.attr('name');
-    var isChecked = $target.is(':checked');
-    var value = Avantage.find(x => x.id === id).cost;
-    if (isChecked) {
-        hero.avantagePts -= value;
-        hero.avantages.push(id);
-        var result = $.grep(Avantage, function (e) { return e.cost > hero.avantagePts });
-        $.each(result, function (i, obj) {
-            var name = obj.id;
-            $('#avantages input[name=' + name + ']').attr("disabled", true);
-        });
-    }
-    else {
-        hero.avantagePts += value;
-        var result = $.grep(Avantage, function (e) { return e.cost <= hero.avantagePts; });
-        $.each(result, function (i, obj) {
-            var name = obj.id;
-            $('#avantages input[name=' + name + ']').removeAttr("disabled");
-        });
-        var index = hero.avantages.indexOf(id);
-        if (index > -1) {
-            hero.avantages.splice(index, 1);
-        }
-    }
+function calculateAdvantagePoints() {
+    hero.avantagesUsedPts = 0;
+    $.each($("#avantages input[type='checkbox']:checked").not(':disabled'), function (i, obj) {            
+        hero.avantagesUsedPts += Avantage.find(x => x.id === $(this).attr('name')).cost;        
+    });
+    var leftPts = hero.avantagePts + hero.histAvantagePts - hero.avantagesUsedPts;
+    $.each(Avantage, function (i, obj) {
+        var name = obj.id;
+        $('#avantages input[name=' + name + ']').removeAttr("disabled");
+    });
+    var result = $.grep(Avantage, function (e) { return e.cost > leftPts });
+    $.each(result, function (i, obj) {
+        var name = obj.id;
+        $('#avantages input[name=' + name + ']').attr("disabled", true);
+    });
     $.each(hero.avantages, function (i, obj) {
         $('#avantages input[name=' + obj + ']').removeAttr("disabled");
-    });
+    });       
     for (var i = 0; i < hero.hist1Avantages.length; i++) {
         $('#avantages input[name=' + hero.hist1Avantages[i] + ']').attr("disabled", true);
         $('#avantages input[name=' + hero.hist1Avantages[i] + ']').prop('checked', true);
@@ -523,7 +513,25 @@ function advantageToggle(event) {
     for (var i = 0; i < hero.hist2Avantages.length; i++) {
         $('#avantages input[name=' + hero.hist2Avantages[i] + ']').attr("disabled", true);
         $('#avantages input[name=' + hero.hist2Avantages[i] + ']').prop('checked', true);
-    }  
+    } 
+    $("#avantagesUsedPts").html(hero.avantagesUsedPts);
+    $("#avantagesTotalPts").html(hero.avantagePts + hero.histAvantagePts);
+}
+
+function advantageToggle(event) {
+    var $target = $(event.target);
+    var id = $target.attr('name');
+    var isChecked = $target.is(':checked');
+    if (isChecked) {        
+        hero.avantages.push(id);       
+    }
+    else {   
+        var index = hero.avantages.indexOf(id);
+        if (index > -1) {
+            hero.avantages.splice(index, 1);
+        }
+    }
+    calculateAdvantagePoints();
 }
 
 $(document).ready(function () {
