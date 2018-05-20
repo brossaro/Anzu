@@ -191,7 +191,28 @@ var hero = {
         { name: "Tir", valeur: 0, total: 0 },
         { name: "Vigilance", valeur: 0, total: 0 },
         { name: "Vol", valeur: 0, total: 0 }
-    ]
+    ],
+    vertu: null,
+    travers:null,
+    story: [
+        {
+            nom: null,
+            objectif: null,
+            recompense: null,
+            etape: [
+                {
+                    desc: null
+                }
+            ]
+        }
+    ],
+    joueur: null,
+    nom: null,
+    religion: null,
+    concept: null,
+    reputation: 0,
+    richesse: 0,
+    langues: []
 };
 
 var currentStep = 1;
@@ -534,7 +555,70 @@ function advantageToggle(event) {
     calculateAdvantagePoints();
 }
 
-$(document).ready(function () {
+function vertuRadioChange(event) {
+    hero.vertu =  $('input[name="vertu"]:checked').val();
+}
+
+function traversRadioChange(event) {
+    hero.travers =  $('input[name="travers"]:checked').val();
+}
+
+function txtInputChange(event) {
+    hero.story[0].nom = $('#story-title').val();
+    hero.story[0].objectif = $('#story-objective').val();
+    hero.story[0].recompense = $('#story-reward').val();
+    hero.story[0].etape[0].desc = $('#story-step-1').val();
+    hero.joueur = $('#player-name').val();
+    hero.nom = $('#character-name').val();
+    hero.concept = $('#character-concept').val();
+    hero.religion = $('#character-religion').val();
+    hero.reputation = $('#character-reputation').val();
+    hero.richesse = $('#character-richesse').val();
+}
+
+function openCharSheet(event) {
+    $('header, #herobuilder, footer').hide();
+
+    //Profil
+    $('#blc-joueur').html(hero.joueur);
+    $('#blc-personnage').html(hero.nom);
+    $('#blc-concept').html(hero.concept);
+    $('#blc-nation').html(Nation.find(x => x.id === hero.nation).name);
+    $('#blc-religion').html(hero.religion);
+    $('#blc-reputation').html(hero.reputation);
+    $('#blc-richesse').html(hero.richesse);
+
+    //Arcanes
+    $('#blc-vertu').html(hero.vertu);//TODO use name instead of Id
+    $('#blc-travers').html(hero.travers);//TODO use name instead of Id
+
+    //Histoires
+    $('#blc-story-nom').html(hero.story[0].nom);
+    $('#blc-story-objectif').html(hero.story[0].objectif);
+    $('#blc-story-recompense').html(hero.story[0].recompense);
+    $('#blc-story-step').html(hero.story[0].etape[0].desc);
+
+    //Caracteristiques
+    for (var i = 0; i < hero.caracteristique.length; i++) {        
+        generateStar($('#blc-' + hero.caracteristique[i].name), hero.caracteristique[i].valeur);        
+    }
+
+    //Compétences
+    for (var i = 0; i < hero.competence.length; i++) {        
+        generateStar($('#blc-' + hero.competence[i].name + '-row'), hero.competence[i].valeur);        
+    }
+    for (var i = 0; i < hero.hist1Competences.length; i++) {
+        generateStar($('#blc-' + hero.hist1Competences[i] + '-row'), 1);
+    }
+    for (var i = 0; i < hero.hist2Competences.length; i++) { 
+        generateStar($('#blc-' + hero.hist2Competences[i] + '-row'), 1);
+    }
+
+    $('#charsheet').show();
+}
+
+$(document).ready(function () { 
+    //return openCharSheet();   
     setTimeout(function () {
         $('.js-btn-next').click(function () { goToNextStep(); });
         $('.js-btn-previous').click(function () { goToStep(activeStep - 1); });
@@ -544,8 +628,11 @@ $(document).ready(function () {
         $('#historiques input').click(function (event) { historyToggle(event); })
         $('.js-competence .js-btn-minus').click(function (event) { competenceMinus(event); });
         $('.js-competence .js-btn-plus').click(function (event) { competencePlus(event); });
-        $('#avantages input').click(function (event) { advantageToggle(event); })
-
+        $('#avantages input').click(function (event) { advantageToggle(event); });
+        $('input[name="vertu"]').change(function (event) { vertuRadioChange(event); });
+        $('input[name="travers"]').change(function (event) { traversRadioChange(event); });
+        $(".js-txt-input").change(function (event) { txtInputChange(event); });
+        $('#finalize').click(function (event) { openCharSheet(event); })
     }, 1000);
 });
 
