@@ -38,6 +38,7 @@ Finalisation
 
 Charsheet
 -Ajouter descriptions pour Arcanes, historiques et avantages
+-Afficher instruction pour impression
 -limité à une ligne les champs afin de ne pas trop agrandir les blocs 
 -Image background lors de l'impression
 -Refaire spirale de la mort plus voyante

@@ -276,6 +276,7 @@ function goToNextStep() {
 }
 
 function goToStep(stepToGo) {
+    return alert("Action non-disponible pour le moment");
     var step = activeStep;
     /*if (currentStep != activeStep) {
         var isValid = false;
@@ -691,6 +692,6 @@ $(document).ready(function () {
         $('input[name="travers"]').change(function (event) { traversRadioChange(event); });
         $(".js-txt-input").change(function (event) { txtInputChange(event); });
         $('#finalize').click(function (event) { openCharSheet(event); })
-    }, 1000);
+    }, 1500);
 });
 
