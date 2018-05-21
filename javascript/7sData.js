@@ -147,7 +147,48 @@ var Avantage = [
     { id: 'av75', name: 'nous ne sommes pas si différents…', cost: 5, realCost: 5 },
     { id: 'av76', name: 'unis, nous sommes forts', cost: 5, realCost: 5 }
 ];
-var Arcane = [];
+var Arcane = [
+    {id:'roublard', name:'Roublard'},
+    {id:'curieux', name:'Curieux'},
+    {id:'amical', name:'Amical'},
+    {id:'dependant', name:'Dépendant'},
+    {id:'volontaire', name:'Volontaire'},
+    {id:'ambitieux', name:'Ambitieux'},
+    {id:'passionne', name:'Passionné'},
+    {id:'amantMaudit', name:'Amant maudit'},
+    {id:'chanceux', name:'Chanceux'},
+    {id:'malchanceux', name:'Malchanceux'},
+    {id:'habile', name:'Habile'},
+    {id:'naif', name:'Naïf'},
+    {id:'humble', name:'Humble'},
+    {id:'arrogant', name:'Arrogant'},
+    {id:'perspicace', name:'Perspicace'},
+    {id:'envieux', name:'Envieux'},
+    {id:'intuitif', name:'Intuitif'},
+    {id:'manipulateur', name:'Manipulateur'},
+    {id:'conquerant', name:'Conquérant'},
+    {id:'loyal', name:'Loyal'},
+    {id:'altruiste', name:'Altruiste'},
+    {id:'indecis', name:'Indécis'},
+    {id:'prompt', name:'Prompt'},
+    {id:'perfectionniste', name:'Perfectionniste'},
+    {id:'apaisant', name:'Apaisant'},
+    {id:'tetu', name:'Têtu'},
+    {id:'subtil', name:'Subtil'},
+    {id:'obtus', name:'Obtus'},
+    {id:'glorieux', name:'Glorieux'},
+    {id:'fier', name:'Fier'},
+    {id:'lucide', name:'Lucide'},
+    {id:'zele', name:'Excès de zèle'},
+    {id:'exemplaire', name:'Exemplaire'},
+    {id:'rancunier', name:'Rancunier'},
+    {id:'hardi', name:'Hardi'},
+    {id:'temeraire', name:'Téméraire'},
+    {id:'impavide', name:'Impavide'},
+    {id:'superstitieux', name:'Superstitieux'},
+    {id:'encourageant', name:'Encourageant'},
+    {id:'inconsidere', name:'Inconsidéré'}
+];
 var Histoire = [];
 var toucheFinale = {};
 
@@ -589,8 +630,8 @@ function openCharSheet(event) {
     $('#blc-richesse').html(hero.richesse);
 
     //Arcanes
-    $('#blc-vertu').html(hero.vertu);//TODO use name instead of Id
-    $('#blc-travers').html(hero.travers);//TODO use name instead of Id
+    $('#blc-vertu').html(Arcane.find(x => x.id === hero.vertu).name);
+    $('#blc-travers').html(Arcane.find(x => x.id === hero.travers).name);
 
     //Histoires
     $('#blc-story-nom').html(hero.story[0].nom);
@@ -612,6 +653,23 @@ function openCharSheet(event) {
     }
     for (var i = 0; i < hero.hist2Competences.length; i++) { 
         generateStar($('#blc-' + hero.hist2Competences[i] + '-row'), 1);
+    }
+
+    //Historiques
+    $('#blc-hist1').html(Historique.find(x => x.id === hero.hist1).name);
+    $('#blc-hist2').html(Historique.find(x => x.id === hero.hist2).name);
+
+    //Avantages
+    for (var i = 0; i < hero.hist1Avantages.length; i++) { 
+        $("#blc-avantages .blc-content").append("<p>" + Avantage.find(x => x.id === hero.hist1Avantages[i]).name + "</p>");
+    }
+    for (var i = 0; i < hero.hist2Avantages.length; i++) { 
+        if (!hero.hist1Avantages.includes(hero.hist2Avantages[i])) {
+            $("#blc-avantages .blc-content").append("<p>" + Avantage.find(x => x.id === hero.hist2Avantages[i]).name + "</p>");
+        }
+    }
+    for (var i = 0; i < hero.avantages.length; i++) { 
+        $("#blc-avantages .blc-content").append("<p>" + Avantage.find(x => x.id === hero.avantages[i]).name + "</p>");
     }
 
     $('#charsheet').show();

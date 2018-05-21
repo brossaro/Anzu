@@ -32,4 +32,11 @@ Général
 -Bouton pour ajouter une étape
 
 Étape 8
--TODO
+
+Finalisation
+-TODO page de finalisation avant impression avec possibilité de sauvegardé, d'imprimer et de créé fiche avec bbCode
+
+Charsheet
+-Ajouter descriptions pour Arcanes, historiques et avantages
+-limité à une ligne les champs afin de ne pas trop agrandir les blocs 
+-Image background lors de l'impression

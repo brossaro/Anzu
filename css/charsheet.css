@@ -210,16 +210,17 @@
 
 #blc-hist1, #blc-hist2 {
     padding:5px;
-    height:70px;
+    height:67px;
     vertical-align: top;
 }
 
-#avantages .blc-content {
+#blc-avantages .blc-content {
     height: 13.7cm;
 }
 
-#avantages p {
+#blc-avantages p {
     vertical-align: top;
+    text-transform: capitalize;
 }
 
 #blc-vertu, #blc-travers {
