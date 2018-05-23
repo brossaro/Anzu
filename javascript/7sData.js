@@ -692,6 +692,6 @@ $(document).ready(function () {
         $('input[name="travers"]').change(function (event) { traversRadioChange(event); });
         $(".js-txt-input").change(function (event) { txtInputChange(event); });
         $('#finalize').click(function (event) { openCharSheet(event); })
-    }, 1500);
+    }, 2000);
 });
 
