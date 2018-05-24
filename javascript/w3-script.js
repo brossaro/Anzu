@@ -97,5 +97,12 @@ function includeHTML() {
 }
 
 includeHTML(); 
-
+/*setTimeout(function() {
+$('.main-logo').hover(function () {
+    $(".svg-logo").attr()("src", "images/compass(5)");
+  },
+    function () {
+        $(".svg-logo").attr("src", "images/compass(4).svg");
+    });
+}, 1000);*/
 
