@@ -97,12 +97,14 @@ function includeHTML() {
 }
 
 includeHTML(); 
-/*setTimeout(function() {
+setTimeout(function() {
 $('.main-logo').hover(function () {
-    $(".svg-logo").attr()("src", "images/compass(5)");
+    $(".svg-black").show();
+    $(".svg-white").hide();
   },
     function () {
-        $(".svg-logo").attr("src", "images/compass(4).svg");
+        $(".svg-black").hide();
+        $(".svg-white").show();
     });
-}, 1000);*/
+}, 200);
 
