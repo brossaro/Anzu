@@ -19,16 +19,28 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" href="images/compass.svg" />
-
+	<style>
+			/* Full height image header */
+			.bgimg-1 {
+					background-position: center;
+					background-size: cover;
+					background-image: url("images/sunset.jpg");
+					min-height: 100%;
+			}
+			
+			</style>
 </head>
 
 <body>
-	<header w3-include-html="header.html"></header>
-	<div class="w3-container">
-		<h2>404</h2>
-		<p>
-			Ohé matelot, vous naviguez sur des eaux inconnue s!
-		</p>
+	<header class="w3-top" w3-include-html="header.html"></header>
+	<div class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+		<div class="w3-display-left w3-text-white" style="padding:48px">
+			<span class="w3-jumbo w3-hide-small">404</span>
+			<br>
+			<span class="w3-xxlarge w3-hide-large w3-hide-medium">404</span>
+			<br>
+			<span class="w3-large w3-opacity" style="color: #000;background-color: #f1f1f1;padding: 8px 16px;">Ohé ! Matelot, vous naviguez hors des eaux connues de ce site, cette page n'existe pas !</span>
+		</div>		
 	</div>
 	<footer class="w3-container w3-secondary-theme w3-text-secondary-theme-dark w3-padding-16 w3-bottom" w3-include-html="footer.html"></footer>
 	<script src="javascript/jquery-3.2.0.min.js"></script>
