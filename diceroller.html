@@ -19,19 +19,140 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" href="images/compass.svg" />
+	<style>
+		input.wnd,
+		input.car,
+		input.com,
+		input.bon {
+			display: none;
+		}
 
+		label.w3-button {
+			width: 45px;
+		}
+
+		.wnd:checked+label,
+		.car:checked+label,
+		.com:checked+label,
+		.bon:checked+label {
+			background-color: #becccc !important;
+			color: black !important;
+		}
+
+		#dice-input tbody tr td:first-child {
+			text-align:right;
+			padding-right:10px;
+		}
+	</style>
 </head>
 
 <body>
 	<header w3-include-html="header.html"></header>
 	<div class="w3-container">
+		<div class="w3-half w3-container">
 		<h2>Lanceur de dés</h2>
+		<table id="dice-input" class="w3-table w3-large">
+			<tr>
+				<td>
+					<span>Spirale de la mort </span>
+				</td>
+				<td>
+					<input type="radio" class="wnd" id="wnd0" name="wnd" value="0" checked>
+					<label for="wnd0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
+					<input type="radio" class="wnd" id="wnd1" name="wnd" value="1">
+					<label for="wnd1" class="w3-button w3-hover-secondary-theme w3-theme ">1</label>
+					<input type="radio" class="wnd" id="wnd2" name="wnd" value="2">
+					<label for="wnd2" class="w3-button w3-hover-secondary-theme w3-theme ">2</label>
+					<input type="radio" class="wnd" id="wnd3" name="wnd" value="3">
+					<label for="wnd3" class="w3-button w3-hover-secondary-theme w3-theme ">3</label>
+					<input type="radio" class="wnd" id="wnd4" name="wnd" value="4">
+					<label for="wnd4" class="w3-button w3-hover-secondary-theme w3-theme ">4</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Caractéristique </span>
+				</td>
+				<td>
+					<input type="radio" class="car" id="car0" name="car" value="0" checked>
+					<label for="car0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
+					<input type="radio" class="car" id="car1" name="car" value="1">
+					<label for="car1" class="w3-button w3-hover-secondary-theme w3-theme ">1</label>
+					<input type="radio" class="car" id="car2" name="car" value="2">
+					<label for="car2" class="w3-button w3-hover-secondary-theme w3-theme ">2</label>
+					<input type="radio" class="car" id="car3" name="car" value="3">
+					<label for="car3" class="w3-button w3-hover-secondary-theme w3-theme ">3</label>
+					<input type="radio" class="car" id="car4" name="car" value="4">
+					<label for="car4" class="w3-button w3-hover-secondary-theme w3-theme ">4</label>
+					<input type="radio" class="car" id="car5" name="car" value="5">
+					<label for="car5" class="w3-button w3-hover-secondary-theme w3-theme ">5</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Compétence </span>
+				</td>
+				<td>
+					<input type="radio" class="com" id="com0" name="com" value="0" checked>
+					<label for="com0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
+					<input type="radio" class="com" id="com1" name="com" value="1">
+					<label for="com1" class="w3-button w3-hover-secondary-theme w3-theme ">1</label>
+					<input type="radio" class="com" id="com2" name="com" value="2">
+					<label for="com2" class="w3-button w3-hover-secondary-theme w3-theme ">2</label>
+					<input type="radio" class="com" id="com3" name="com" value="3">
+					<label for="com3" class="w3-button w3-hover-secondary-theme w3-theme ">3</label>
+					<input type="radio" class="com" id="com4" name="com" value="4">
+					<label for="com4" class="w3-button w3-hover-secondary-theme w3-theme ">4</label>
+					<input type="radio" class="com" id="com5" name="com" value="5">
+					<label for="com5" class="w3-button w3-hover-secondary-theme w3-theme ">5</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Autres bonus </span>
+				</td>
+				<td>
+					<input type="radio" class="bon" id="bon0" name="bon" value="0" checked>
+					<label for="bon0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
+					<input type="radio" class="bon" id="bon1" name="bon" value="1">
+					<label for="bon1" class="w3-button w3-hover-secondary-theme w3-theme ">1</label>
+					<input type="radio" class="bon" id="bon2" name="bon" value="2">
+					<label for="bon2" class="w3-button w3-hover-secondary-theme w3-theme ">2</label>
+					<input type="radio" class="bon" id="bon3" name="bon" value="3">
+					<label for="bon3" class="w3-button w3-hover-secondary-theme w3-theme ">3</label>
+					<input type="radio" class="bon" id="bon4" name="bon" value="4">
+					<label for="bon4" class="w3-button w3-hover-secondary-theme w3-theme ">4</label>
+					<input type="radio" class="bon" id="bon5" name="bon" value="5">
+					<label for="bon5" class="w3-button w3-hover-secondary-theme w3-theme ">5</label>
+				</td>
+			</tr>
+		</table>
+		<button class="w3-button w3-hover-secondary-theme w3-theme w3-large" id="roll" style="width:100%">Lancer les dés</button>
+	</div>
+	<div class="w3-half w3-container">		
+		<div id="results"></div>
+	</div>
 		
 
 	</div>
 	<footer class="w3-container w3-secondary-theme w3-text-secondary-theme-dark w3-padding-16 w3-bottom" w3-include-html="footer.html"></footer>
 	<script src="javascript/jquery-3.2.0.min.js"></script>
 	<script src="javascript/w3-script.js"></script>
+	<script>
+		$('#roll').click(function(){
+			var diceResults = [];
+			var car = parseInt($('input[name="car"]:checked').val());
+			var com = parseInt($('input[name="com"]:checked').val());
+			for (var i = 0; i < car + com; i++) {
+				diceResults.push(rollDice());
+			}
+			$('#results').prepend('<p>' + diceResults.toString() + '</p>')
+		});
+		
+		function rollDice(){
+			return Math.floor((Math.random() * 10) + 1);
+		}
+	</script>
 </body>
 
 </html>
