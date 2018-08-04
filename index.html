@@ -131,7 +131,9 @@
 	<script>
 		$(document).ready(function () {
 			$('#myNavbar').addClass("w3-opacity-min").removeClass("w3-theme");
-			$('.svg-white').attr('src', 'images/compass(5).svg');
+			setTimeout(function() {
+				$('.svg-white').attr('src', 'images/compass(5).svg');
+			}, 50);			
 		});
 
 		// Change style of navbar on scroll
