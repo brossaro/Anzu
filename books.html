@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/w3-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="icon"  href="images/compass.svg"/>
+	<link rel="icon" href="images/compass.svg" />
 	<style>
 		* {
 			box-sizing: border-box;
@@ -35,6 +35,17 @@
 		.mySlides {
 			display: none;
 		}
+
+		.mySlides>div {
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: justify;
+		}
+
+		.mySlides>div>.w3-italic {
+			text-align: center;
+		}
+
 
 		/* Add a pointer when hovering over the thumbnail images */
 
@@ -96,7 +107,7 @@
 		.row:after {
 			content: "";
 			display: table;
-			margin-bottom:5px;
+			margin-bottom: 5px;
 			clear: both;
 		}
 
@@ -123,12 +134,14 @@
 <body>
 	<header w3-include-html="header.html" class="w3-theme"></header>
 	<div class="w3-container">
-			<h2>Livres</h2>
+		<h2>Livres</h2>
 		<p>
-			Voici la liste des livres officiels parus ou à paraître pour 7th Sea Second Edition dans leurs versions originales publiés par <a class="w3-a" target="_blank" href="http://johnwickpresents.com/">John Wick Presents</a>.
+			Voici la liste des livres officiels parus ou à paraître pour 7th Sea Second Edition dans leurs versions originales publiés
+			par
+			<a class="w3-a" target="_blank" href="http://johnwickpresents.com/">John Wick Presents</a>.
 		</p>
 		<p>
-		 <a href="livres.html">Voir les livres parus en français</a>
+			<a href="livres.html">Voir les livres parus en français</a>
 		</p>
 		<br/>
 		<div class="container">
@@ -151,79 +164,402 @@
 				<div class="column">
 					<img class="demo cursor" src="images/books/not2.jpg" style="width:100%" onclick="currentSlide(6)" alt="7th Sea: Nations of Théah, Volume 2">
 				</div>
-				
+
 			</div>
 			<div class="row">
-					<div class="column">
-						<img class="demo cursor" src="images/books/tce.jpg" style="width:100%" onclick="currentSlide(7)" alt="7th Sea: Crescent Empire">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="images/books/tnw.png" style="width:100%" onclick="currentSlide(8)" alt="7th Sea: The New World">
-					</div>
-					<div class="column">
-							<img class="demo cursor" src="images/books/kqs.jpg" style="width:100%" onclick="currentSlide(9)" alt="7th Sea: Khitai Quickstart">
-					</div>
-					<div class="column">
-							<img class="demo cursor" src="images/books/logaf.jpg" style="width:100%" onclick="currentSlide(10)" alt="7th Sea: Lands of Gold and Fire">
-					</div>					
-					<div class="column">
-						
-					</div>
-					<div class="column">
-						
-					</div>
+				<div class="column">
+					<img class="demo cursor" src="images/books/tce.jpg" style="width:100%" onclick="currentSlide(7)" alt="7th Sea: Crescent Empire">
 				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/books/tnw.png" style="width:100%" onclick="currentSlide(8)" alt="7th Sea: The New World">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/books/kqs.jpg" style="width:100%" onclick="currentSlide(9)" alt="7th Sea: Khitai Quickstart">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/books/logaf.jpg" style="width:100%" onclick="currentSlide(10)" alt="7th Sea: Lands of Gold and Fire">
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+			</div>
 			<div class="caption-container w3-secondary-theme">
-				<h4 id="caption"></p>
+				<h4 id="caption"></h4>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/core.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/core.jpg" class="w3-half">
+				<div class="w3-half">
+
+					<p>
+						7th Sea is a tabletop roleplaying game of swashbuckling and intrigue, exploration and adventure, taking place on the continent
+						of Theah, a land of magic and mystery inspired by our own Europe. Players take the roles of heroes thrown into global
+						conspiracies and sinister plots, exploring ancient ruins of a race long vanished and protecting the rightful kings
+						and queens of Theah from murderous villains.
+					</p>
+					<p class="w3-italic">
+						Save the Queen of Avalon from treacherous blackmail!
+					</p>
+					<p class="w3-italic">
+						Thwart a dastardly assassination attempt on the Cardinal of Castille!
+					</p>
+					<p class="w3-italic">
+						Raid the villainous fleets of Vodacce Merchant Princes!
+					</p>
+					<p class="w3-italic">
+						Free the Prince of the Sarmatian Commonwealth from a mysterious curse!
+					</p>
+					<p class="w3-italic">
+						Make decisions that alter the very course of Thean history!
+					</p>
+					<p>
+						In 7th Sea, you are a Hero, an icon of Theah ready to live and die for causes that matter. You bravely take on a dozen thugs
+						with swords, knives and guns all on your own. You are the trusted knight, a loyal bodyguard or even an adventuring
+						queen herself.
+					</p>
+					<p>
+						In other words—you are d’Artagnan, Milady de Winter, the Dread Pirate Roberts, Jack Sparrow, Julie d’Aubigney, and the Scarlet
+						Pimpernel all rolled up in one!
+					</p>
+					<p>
+						This is a game of high adventure, mystery and action. This is a game of intrigue and romance.
+					</p>
+					<p>
+						This is 7th Sea.
+					</p>
+
+
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/qs.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/qs.jpg" class="w3-half">
+				<div class="w3-half">
+					<p>
+						This is the rules packet for the 7th Sea quickstart adventure “Niech Żyje Książę!” (or “Long Live the Prince!”).
+					</p>
+					<p>
+						Here you will find an overview of the rules as a whole—how to roll dice and count Raises, what Skills cover, and some suggested
+						expanded uses for those Skills.
+					</p>
+					<p>
+						Most of the rules that you need for specific parts of the adventure are included here.
+					</p>
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/hav.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/hav.jpg" class="w3-half">
+				<div class="w3-half">
+
+					<p>
+						A great power summoning forth the brightest souls, and the darkest. These are the Heroes and Villains of Théah. For every
+						knife-twisting assassin, there is an ever-diligent bodyguard. For each great act of courage and hope, there is a dastardly
+						deed performed in darkness. For every Hero there is a Villain.
+					</p>
+					<p>
+						The 7th Sea Heroes &amp; Villains book gives you 40 Heroes and 40 Villains to use in your game. It discusses heroism, villainy
+						and possible redemption for lost souls who have fallen into darkness and includes new Advantages, Backgrounds and other
+						systems for use with 7th Sea: Second Edition.
+					</p>
+					<p>
+						The 7th Sea Heroes &amp; Villains book includes:
+						<ul>
+							<li>
+								40 Heroes to use as NPCs or pregen characters
+							</li>
+							<li>
+								40 Villains ready to drop into any campaign
+							</li>
+							<li>
+								Plot points and storylines for all characters
+							</li>
+							<li>
+								Tips and tricks for creating your character
+							</li>
+							<li>
+								History and Goals for all Heroes
+							</li>
+							<li>
+								History and Schemes for all Villains
+							</li>
+							<li>
+								New Mechanics and Dueling Styles
+							</li>
+						</ul>
+					</p>
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/pn.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/pn.jpg" class="w3-half">
+				<div class="w3-half">
+
+
+					<p class="w3-italic">
+						Let’s get the glad-rags on and drive her to sea
+					</p>
+					<p class="w3-italic">
+						For a free sailor’s life for sure it ain’t free
+					</p>
+					<p>
+						Piracy on the Seven Seas has reached a fever pitch. The black flag poses a constant danger for merchants and navies, as unscrupulous
+						brigands seek their fortunes. But there are more dangers afoot than pirates: beasts lurking under the waves, rumors
+						of haunted and immortal ghost ships...and the demon named “Reis.”
+					</p>
+					<p>
+						This book contains material for 7th Sea: Second Edition including new Backgrounds, Advantages, Stories and Sorceries. It
+						also includes five new Pirate Nations:
+						<ul>
+							<li>
+								Numa, the land where legends were born and never left
+							</li>
+							<li>
+								La Bucca, the once-prison island turned headquarters for international intrigue
+							</li>
+							<li>
+								The Atabean Islands, where the ghosts of Rahuri ancestors sail alongside native peoples
+							</li>
+							<li>
+								Aragosta, home of the Brotherhood of the Coast and a pirate paradise
+							</li>
+							<li>
+								Jaragua, self-liberated slave colony and home of a new Sorcery called Kap Sevi
+							</li>
+						</ul>
+					</p>
+					<p>
+						Pirate Nations also includes new setting materials for 7th Sea featuring the Devil Jonah, the dreaded Reis and Theah’s first
+						multinational, the Atabean Trading Company. There be adventure aplenty in these lands, more than any one crew can hope
+						to see in a lifetime.
+					</p>
+					<p class="w3-italic">
+						Sail, me hearties, and treasure what good luck you find. You’ll be needing it.
+					</p>
+
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/not1.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/not1.jpg" class="w3-half">
+				<div class="w3-half">
+
+					<p class="w3-italic">
+						Liberty! Equality! Freedom!
+					</p>
+					<p>
+						Change is coming to Theah’s western nations. Tensions rise as disenfranchised, war-weary people grow restless under the unrelenting
+						rule of the nobility. Now, the people look towards revolution as the only respite.
+					</p>
+					<p>
+						This book contains material for 7th Sea: Second Edition including new Backgrounds, Advantages, Dueling styles and new monsters.
+						It also includes expanded setting information for Theah’s four western nations.
+						<ul>
+							<li>
+								Avalon,including a look at Queen Elaine’s Court, the Sidhe, various locations in the Glamour Isles and an expansion on Glamour
+								Sorcery
+							</li>
+							<li>
+								Castille,including an inside view into the Church and Inquisition, the ducados of Castille and Alquimia, an all new Sorcery
+								for Castille
+							</li>
+							<li>
+								Montaigne, including a look into the royal family and l’Empereur’s court, the Montaigne countryside and an expansion on Porte
+								Sorcery
+							</li>
+							<li>
+								Vestenmennavenjar, including a look into the Vendel League, the jarls of Vesten, the ongoings of the various cities in Vesten
+								and Galdr, an all new Sorcery for Vesten
+							</li>
+						</ul>
+					</p>
+					<p>
+						Adventure, political intrigue and upheaval lurk around every corner. Are you ready to take up the cause?
+					</p>
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/not2.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/not2.jpg" class="w3-half">
+				<div class="w3-half">
+					<p class="w3-italic">
+						What is free can never be caged.
+					</p>
+					<p class="w3-italic">
+						What is caged will never know freedom.
+					</p>
+					<p>
+						Revolution, democracy, freedom—Théah’s eastern nations know these words well. As each nation struggles to find its footing
+						in these treacherous new landscapes, unrest looms on the horizon.
+					</p>
+					<p>
+						This book contains material for 7th Sea: Second Edition including new Backgrounds, Advantages, Dueling styles and new monsters.
+						It also includes expanded setting information for Théah’s four eastern nations:
+						<ul>
+							<li>
+								Eisen, including information about the Eisenfursten, the Horrors within the nation, various locations around the nation,
+								and an expansion on Hexenwerk
+							</li>
+							<li>
+								The Sarmatian Commonwealth, with an inside look at the new nobility and those who oppose it, information on the two halves
+								of the country, and an in depth look at Sanderis
+							</li>
+							<li>
+								Ussura, including a view of the two contenders for the throne, the Ussura countryside, and a look at Tur, a Leshiye as powerful
+								as Matushka
+							</li>
+							<li>
+								Vodacce, including the ongoings of the various cities in Vodacce, important people around the nation, and a look at what
+								happens when Sorte is used untrained
+							</li>
+						</ul>
+					</p>
+					<p>
+						Adventure, political intrigue and upheaval lurk around every corner. Are you ready to take up the cause?
+					</p>
+				</div>
 			</div>
 
 			<div class="mySlides">
-				<img src="images/books/tce.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/tce.jpg" class="w3-half">
+				<div class="w3-half">
+					<p class="w3-italic">
+						In an ancient land of sand and sun
+					</p>
+					<p class="w3-italic">
+						Those who burn brightest cast the longest shadows.
+					</p>
+					<p>
+						When the rightful empress returned home to reclaim her throne, the empire rejoiced. As the empire awakens to a new dawn,
+						Anatoli merchants to Sarmion nobles work towards a new life, holding close the ideals which make the empire strong—family,
+						honor and kindness.
+					</p>
+					<p>
+						However, progress is not made without pebbles in the sand. The dethroned sultan plots to recover his throne and his lover,
+						controlled by an otherworldly force, seeks to aid him. Jinn have awoken hungering for the power over mortals they had
+						many years ago...
+					</p>
+					<p>
+						This book contains material for 7th Sea: Second Edition including new mechanics for Poetry Duels, Backgrounds, Advantages,
+						Stories and Sorceries. It also includes five new Nations:
+						<ul>
+							<li>
+								Anatol Ayh, the seat of power and shining star of the Crescent Empire
+							</li>
+							<li>
+								Ashur, an independent city state run by both Assassins and pacifists
+							</li>
+							<li>
+								Persis,ruled by a cruel shah whose vendetta against the empress may tear his country apart
+							</li>
+							<li>
+								Sarmion, a proud Nation rebuilding after the most recent Numanari attack
+							</li>
+							<li>
+								The 8th Sea, a vast desert filled with proud tribes and ancient beasts
+							</li>
+						</ul>
+					</p>
+					<p>
+						Will the empire fall under these threats? Join the fight for the empire’s bright new destiny!
+					</p>
+				</div>
 			</div>
-			
+
 			<div class="mySlides">
-				<img src="images/books/tnw.png" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/tnw.png" class="w3-half">
+				<div class="w3-half">
+					<p>
+						Change has come to the people of Aztlan. The Theans arrived one hundred years ago and failed in their ambitions of conquest,
+						but their words and desires changed everything. For the first time in thousands of years, the Aztlani people speak
+						of a unified land. The three old nations vie for dominance of their splintered empire, and their ambitions consume
+						all who walk these lands.
+					</p>
+					<p>
+						This book contains material for 7th Sea: Second Edition including new mechanics for environmental hazards, Backgrounds, Advantages,
+						Arcana, Stories, Dueling styles and Sorceries. It also includes the three Nations of the former Aztlan Empire:
+						<ul>
+							<li>
+								Nahuacan Alliance,a militaristic alliance of cities devoted to the same four gods
+							</li>
+							<li>
+								TzakK’an, a group of disparate city-states bound together by their shared culture living amongst dense jungles and ancient
+								Syrneth ruins
+							</li>
+							<li>
+								Kuraq, a nation led by a single Empress devoted to the dead god Suway and the undead nobles who serve her
+							</li>
+						</ul>
+					</p>
+					<p>
+						Join the Aztlani people in their struggle to unite in a time of change!
+					</p>
+
+				</div>
 			</div>
-			
+
 			<div class="mySlides">
-				<img src="images/books/kqs.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/kqs.jpg" class="w3-half">
+				<div class="w3-half">
+					<p>
+						Across the world of Terra, far from the familiar kingdoms of Theah, lies the East. The lands of Khitai fill nearly half the
+						world’s map, a rich tapestry of kingdoms connected by adventure, intrigue, trade and exploration. It is an intricate
+						world of contemplative warriors, samurai and animistic mystics, all heeding a Call to Adventure resonating out across
+						the world.
+					</p>
+					<p>
+						Your adventure in 7th Sea: Khitai begins with this Quickstart. This product contains an overview of Khitai, basic rules for
+						running games set in the East, and an adventure for up to five Heroes.
+					</p>
+				</div>
 			</div>
 			<div class="mySlides">
-				<img src="images/books/logaf.jpg" style="width:50%;float:left;">
-				<p style="width:50%;float:left; padding:15px;"></p>
+				<img src="images/books/logaf.jpg" class="w3-half">
+				<div class="w3-half">
+					<p class="w3-italic">
+						Woe to any who dare despoil the lands of gold and fire
+					</p>
+					<p class="w3-italic">
+						For Ifrians value freedom, and the divine is always close…
+					</p>
+					<p>
+						For centuries the foolish have sought to rip the riches from Ifri, but none have been successful...until now. A timeless
+						evil called Bonsam, has partnered with the Atabean Trading Company in an attempt to exploit the lands of Gold and Fire.
+						Demonic bonsam stones are mined from the earth in Mbey, where a broken King serves an unholy combination of evil and
+						despotic greed.
+					</p>
+					<p>
+						Heroes will find themselves aided in their adventures by the mysterious and powerful Jok, who stand behind their chosen champions.
+						Prepare to battle for the soul of Ifri, from glittering deserts, stunning jungles, and the vast open sea.
+					</p>
+					<p>
+						This book contains material for 7th Sea: Lands of Gold and Fire including new mechanics for Backgrounds, Advantages, Arcana,
+						Stories, Dueling styles, and Sorceries. It also includes the five Nations of Ifri:
+						<ul>
+							<li>
+								Manden, a land overflowing with gold, with a keen eye for international diplomacy.
+							</li>
+							<li>
+								Mbey, a once great nation now controlled by an ancient evil which threatens all of Terra.
+							</li>
+							<li>
+								Maghreb, whose beloved Blue Queen reigns over a desert land with a fierce soul.
+							</li>
+							<li>
+								Aksum where logic combines with sorcery to create a strategic and effective empire.
+							</li>
+							<li>
+								Khemet where darkness shrouds an ancient empire and a Prince seeks to bring the light.
+							</li>
+						</ul>
+					</p>
+					<p>
+						A shadow has cast its shape across the glorious lands of Gold and Fire, will you join the fight to dispel it?
+					</p>
+				</div>
 			</div>
 		</div>
 
