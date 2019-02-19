@@ -56,6 +56,8 @@
 				<td>
 					<span>Spirale de la mort </span>
 				</td>
+			</tr>
+			<tr>				
 				<td>
 					<input type="radio" class="wnd" id="wnd0" name="wnd" value="0" checked>
 					<label for="wnd0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
@@ -73,6 +75,8 @@
 				<td>
 					<span>Caractéristique </span>
 				</td>
+			</tr>			
+			<tr>				
 				<td>
 					<input type="radio" class="car" id="car0" name="car" value="0" checked>
 					<label for="car0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
@@ -87,11 +91,13 @@
 					<input type="radio" class="car" id="car5" name="car" value="5">
 					<label for="car5" class="w3-button w3-hover-secondary-theme w3-theme ">5</label>
 				</td>
-			</tr>
+			</tr>	
 			<tr>
 				<td>
 					<span>Compétence </span>
 				</td>
+			</tr>		
+			<tr>				
 				<td>
 					<input type="radio" class="com" id="com0" name="com" value="0" checked>
 					<label for="com0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
@@ -111,6 +117,9 @@
 				<td>
 					<span>Dés additionnels </span>
 				</td>
+			</tr>
+			<tr>
+				
 				<td>
 					<input type="radio" class="bon" id="bon0" name="bon" value="0" checked>
 					<label for="bon0" class="w3-button w3-hover-secondary-theme w3-theme ">0</label>
@@ -125,7 +134,7 @@
 					<input type="radio" class="bon" id="bon5" name="bon" value="5">
 					<label for="bon5" class="w3-button w3-hover-secondary-theme w3-theme ">5</label>
 				</td>
-			</tr>
+			</tr>			
 		</table>
 		<button class="w3-button w3-hover-secondary-theme w3-theme w3-large" id="roll" style="width:100%">Lancer les dés</button>
 	</div>
@@ -138,41 +147,7 @@
 	<footer class="w3-container w3-secondary-theme w3-text-secondary-theme-dark w3-padding-16 w3-bottom" w3-include-html="footer.html"></footer>
 	<script src="javascript/jquery-3.2.0.min.js"></script>
 	<script src="javascript/w3-script.js"></script>
-	<script>
-		$('#roll').click(function(){
-			var diceResults = [];
-			var miseTreshold = 10;
-			var explodingTen = false;
-			var wnd = parseInt($('input[name="wnd"]:checked').val());
-			var car = parseInt($('input[name="car"]:checked').val());
-			var com = parseInt($('input[name="com"]:checked').val());
-			var bon = parseInt($('input[name="bon"]:checked').val());
-			if (wnd >= 1) bon++;
-			if (wnd >= 3) explodingTen = true;
-			for (var i = 0; i < car + com + bon; i++) {
-				diceResults.push(rollDice());
-			}
-			var result = '<p>Résultat: ' + diceResults.toString() + '</p>'
-			if (com >= 3) {
-				var min = Math.min(...diceResults);
-				var index = diceResults.indexOf(min);
-    			diceResults.splice(index, 1);
-				var reroll = rollDice();
-				diceResults.push(reroll);
-				result += '<p>Relance ' + min + ', devient ' + reroll + '</p>'
-				result += '<p>Résultat: ' + diceResults.toString() + '</p>'				
-			}
-			if (com >= 4) miseTreshold = 15;
-			if (com >= 5) explodingTen = true;
-			result += "<p>_____________________</p>"
-			$('#results').prepend(result)
-		});
-		
-		function rollDice(){
-			return Math.floor((Math.random() * 10) + 1);
-		}
-
-	</script>
+	<script src="javascript/diceroller.js"></script>
 </body>
 
 </html>
