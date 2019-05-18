@@ -24,9 +24,34 @@
 			overflow: initial !important;
 		}
 
-		.fb_iframe_widget iframe {
+		#fb-sm {
+			float:left;
+			height: 550px !important;
+		}
+
+		#fb-sm .fb_iframe_widget iframe {
 			width: 300px !important;
 			height: 500px !important;
+		}
+
+		#fb-md {
+			float:left;
+			height: 850px !important;
+		}
+
+		#fb-md .fb_iframe_widget iframe {
+			width: 500px !important;
+			height: 800px !important;
+		}
+
+		#fb-lg {
+			float:left;
+			height: 850px !important;
+		}
+
+		#fb-lg .fb_iframe_widget iframe {
+			width: 500px !important;
+			height: 800px !important;
 		}
 
 		.navbar-shadow {
@@ -62,6 +87,7 @@
 	</div>
 	<div class="w3-container">
 		<h2 class="w3-container">Actualités</h2>
+	<!--
 		<div class="w3-half" style="height: 550px !important;">
 			<div class="w3-padding-16 w3-container" style=" height: 500px !important;overflow-y: scroll;">
 				<p class="w3-bold">1er septembre 2018</p>
@@ -115,7 +141,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="w3-half" style="float:left;height: 550px !important;">
+	-->
+		<div id="fb-sm" class="w3-hide-medium w3-hide-large" >
 			<div id="fb-root"></div>
 			<script>(function (d, s, id) {
 					var js, fjs = d.getElementsByTagName(s)[0];
@@ -125,6 +152,38 @@
 					fjs.parentNode.insertBefore(js, fjs);
 				}(document, 'script', 'facebook-jssdk'));</script>
 			<div class="fb-page" data-href="https://www.facebook.com/7emer" data-tabs="timeline" data-width="300" data-small-header="true"
+			 data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false">
+				<blockquote cite="https://www.facebook.com/7emer" class="fb-xfbml-parse-ignore">
+					<a href="https://www.facebook.com/7emer">7th Sea - Seconde édition française</a>
+				</blockquote>
+			</div>
+		</div>
+		<div id="fb-md" class="w3-hide-small w3-hide-large" >
+			<div id="fb-root"></div>
+			<script>(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v3.0';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-page" data-href="https://www.facebook.com/7emer" data-tabs="timeline" data-width="500" data-height="800" data-small-header="true"
+			 data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false">
+				<blockquote cite="https://www.facebook.com/7emer" class="fb-xfbml-parse-ignore">
+					<a href="https://www.facebook.com/7emer">7th Sea - Seconde édition française</a>
+				</blockquote>
+			</div>
+		</div>
+		<div id="fb-lg" class="w3-hide-small w3-hide-medium">
+			<div id="fb-root"></div>
+			<script>(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v3.0';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-page" data-href="https://www.facebook.com/7emer" data-tabs="timeline" data-width="800" data-height="800" data-small-header="true"
 			 data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false">
 				<blockquote cite="https://www.facebook.com/7emer" class="fb-xfbml-parse-ignore">
 					<a href="https://www.facebook.com/7emer">7th Sea - Seconde édition française</a>
